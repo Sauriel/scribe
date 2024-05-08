@@ -1,0 +1,36 @@
+{
+  "unknown": "An unknown error occurred.",
+  "api": {
+    "user": {
+      "not-found": "User not found.",
+      "wrong-credentials": "Your username or password is wrong.",
+      "not-confirmed": "Your email is not confirmed. Please check your inbox.",
+      "exists": {
+        "username": "This username is already in use.",
+        "email": "This email is already in use."
+      }
+    },
+    "token": {
+      "refresh": {
+        "invalid": "Your login has expired.",
+        "expired": "Your login has expired."
+      }
+    },
+    "authentication": {
+      "missing": "You are not logged in."
+    },
+    "document": {
+      "quota": {
+        "exceeded": "You can't save more documents."
+      },
+      "file-size": {
+        "exceeded": "You have exceeded your file size quota."
+      },
+      "private": {
+        "forbidden": "You are not allowed to save private documents."
+      },
+      "not-found": "Document not found.",
+      "wrong-user": "You don't have the permission to edit this document."
+    }
+  }
+}

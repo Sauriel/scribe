@@ -1,0 +1,12 @@
+<div class="save-document">
+  <heading :info="$t('save-document.info')">{{ $t("save-document.header") }}</heading>
+  <select-bar v-model="destination" :items="destinations" shadow-border alternate-colors />
+  <component :is="destination" :document="payload.document" @done="$emit('close')" />
+  <div class="save-document-content">
+    <heading small>{{ $t("save-document.local.header") }}</heading>
+    <btn outline @click="download" class="m-0">{{ $t("save-document.local.download") }}</btn>
+  </div>
+  <footer>
+    <btn outline @click="$emit('close')">{{ $t("save-document.footer.abort") }}</btn>
+  </footer>
+</div>

@@ -1,0 +1,142 @@
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 50px;
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-background--dark);
+  user-select: none;
+
+  &-menu {
+    display: flex;
+
+    .header {
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem;
+
+      .app-name {
+        font-weight: 700;
+      }
+
+      .version {
+        font-weight: 200;
+      }
+
+      .app-version {
+        font-weight: 200;
+        font-size: 0.65em;
+        padding-left: 0.25em;
+        color: var(--color-foreground--dark);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    > .menu-entry {
+      padding: 5px 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      &:not(.disabled):hover {
+        color: var(--color-foreground--light);
+        background-color: var(--color-background--light);
+      }
+
+      &--link {
+        padding: 0;
+        justify-content: initial;
+        align-items: initial;
+
+        .patreon-link,
+        .discord-link {
+          padding: 5px 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--color-foreground);
+          text-decoration: none;
+
+          &:active,
+          &:focus,
+          &:visited {
+            color: inherit;
+          }
+
+          .join-us {
+            font-style: italic;
+            padding-right: 1ch;
+          }
+        }
+
+        .patreon-link {
+          background-color: #ff424d;
+
+          &:hover {
+            background-color: #ff424bbb;
+          }
+        }
+      }
+
+      &.with-dropdown {
+        padding: 0;
+
+        .menu-dropdown {
+          padding: 5px 20px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &-entry {
+            &--disabled {
+              cursor: default;
+
+              .shortcut {
+                opacity: 0.5;
+              }
+            }
+
+            .shortcut {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-left: 1rem;
+              background-color: var(--color-background--light);
+              border-radius: var(--border-radius);
+              font-size: 0.65rem;
+              letter-spacing: 0.1em;
+              padding: 0.2rem 0.4rem;
+            }
+
+            &:hover {
+              .shortcut {
+                background-color: var(--color-foreground);
+                color: var(--color-background);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.username {
+  margin-left: 0.5em;
+}

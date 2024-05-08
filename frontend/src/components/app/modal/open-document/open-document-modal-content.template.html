@@ -1,0 +1,20 @@
+<div class="open-document">
+  <heading>{{ $t("open-document.header") }}</heading>
+  <div class="open-document-content">
+    <heading small>{{ $t("open-document.browser.header") }}</heading>
+    <select-bar v-model="destination" :items="destinations" shadow-border alternate-colors />
+    <component :is="destination" @done="$emit('close')" />
+    <heading small>{{ $t("open-document.local.header") }}</heading>
+    <btn outline class="upload-btn">
+      <label class="hide-input">
+        <strong>
+          {{ $t("open-document.local.upload") }}
+        </strong>
+        <input type="file" accept=".scribe" @change="upload" />
+      </label>
+    </btn>
+  </div>
+  <footer>
+    <btn outline @click="$emit('close')">{{ $t("open-document.footer.abort") }}</btn>
+  </footer>
+</div>

@@ -1,0 +1,3 @@
+query confirmEmail($token: String!) {
+  confirmEmail(token: $token)
+}

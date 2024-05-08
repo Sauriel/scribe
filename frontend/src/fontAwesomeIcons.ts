@@ -1,0 +1,144 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faChevronDown,
+  faArrowsAltV,
+  faHeading,
+  faParagraph,
+  faColumns,
+  faStickyNote,
+  faTable,
+  faCog,
+  faPlus,
+  faMinus,
+  faFolderOpen,
+  faTh,
+  faUser,
+  faGlobeAmericas,
+  faFile,
+  faTrashAlt,
+  faBars,
+  faArrowsAlt,
+  faFileImage,
+  faEdit,
+  faBook,
+  faPlusCircle,
+  faChevronUp,
+  faCopy,
+  faGripHorizontal,
+  faChevronLeft,
+  faChevronRight,
+  faBold,
+  faItalic,
+  faStrikethrough,
+  faAlignCenter,
+  faAlignRight,
+  faAlignLeft,
+  faAlignJustify,
+  faUnderline,
+  faListOl,
+  faListUl,
+  faGripVertical,
+  faLink,
+  faUnlink,
+  faTools,
+  faImage,
+  faTimes,
+  faDragon,
+  faFilePdf,
+  faEquals,
+  faCheck,
+  faHistory,
+  faHatWizard,
+  faScroll,
+  faCube,
+  faFilm,
+  faMusic,
+  faInfoCircle,
+  faQuestionCircle,
+  faRedoAlt,
+  faUndoAlt,
+  faFileDownload,
+  faUsers,
+  faBookDead,
+  faCheckCircle,
+  faHeart,
+  faEye,
+  faEyeSlash,
+  faList,
+  faExclamationTriangle
+} from "@fortawesome/free-solid-svg-icons";
+import { faDAndD, faDiscord, faPatreon } from "@fortawesome/free-brands-svg-icons";
+import { faStar } from "@fortawesome/free-regular-svg-icons";
+
+library.add(faChevronDown);
+library.add(faChevronUp);
+library.add(faChevronLeft);
+library.add(faChevronRight);
+library.add(faArrowsAltV);
+library.add(faHeading);
+library.add(faParagraph);
+library.add(faColumns);
+library.add(faStickyNote);
+library.add(faTable);
+library.add(faDAndD);
+library.add(faCog);
+library.add(faPlus);
+library.add(faMinus);
+library.add(faGlobeAmericas);
+library.add(faFolderOpen);
+library.add(faTh);
+library.add(faUser);
+library.add(faFile);
+library.add(faTrashAlt);
+library.add(faBars);
+library.add(faFileImage);
+library.add(faArrowsAlt);
+library.add(faEdit);
+library.add(faBook);
+library.add(faPlusCircle);
+library.add(faCopy);
+library.add(faGripHorizontal);
+library.add(faGripVertical);
+library.add(faBold);
+library.add(faItalic);
+library.add(faStrikethrough);
+library.add(faAlignCenter);
+library.add(faAlignRight);
+library.add(faAlignLeft);
+library.add(faAlignJustify);
+library.add(faUnderline);
+library.add(faListOl);
+library.add(faListUl);
+library.add(faLink);
+library.add(faUnlink);
+library.add(faTools);
+library.add(faImage);
+library.add(faTimes);
+library.add(faDragon);
+library.add(faFilePdf);
+library.add(faEquals);
+library.add(faCheck);
+library.add(faHistory);
+library.add(faHatWizard);
+library.add(faScroll);
+library.add(faCube);
+library.add(faImage);
+library.add(faFilm);
+library.add(faMusic);
+library.add(faInfoCircle);
+library.add(faQuestionCircle);
+library.add(faDiscord);
+library.add(faRedoAlt);
+library.add(faUndoAlt);
+library.add(faTh);
+library.add(faFileDownload);
+library.add(faPatreon);
+library.add(faUsers);
+library.add(faBookDead);
+library.add(faStar);
+library.add(faCheckCircle);
+library.add(faHeart);
+library.add(faEye);
+library.add(faEyeSlash);
+library.add(faList);
+library.add(faExclamationTriangle);

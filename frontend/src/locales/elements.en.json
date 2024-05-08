@@ -1,0 +1,27 @@
+{
+  "groups": {
+    "base": {
+      "title": "Built-in",
+      "vertical-spacing": "Space",
+      "columns": "Columns",
+      "grid": "Grid  (coming soon)",
+      "3d-viewer": "3D Viewer  (coming soon)",
+      "video": "Video Player  (coming soon)",
+      "audio": "Audio Player  (coming soon)"
+    },
+    "default": {
+      "title": "Default"
+    },
+    "dandd": {
+      "title": "D&D 5e",
+      "heading": "Heading",
+      "paragraph": "Paragraph",
+      "note": "Note",
+      "table": "Table",
+      "monster": "Monster",
+      "spell": "Spell",
+      "cover": "Cover  (coming soon)",
+      "spell-list": "Spell List  (coming soon)"
+    }
+  }
+}

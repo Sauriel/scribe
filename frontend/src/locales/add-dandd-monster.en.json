@@ -1,0 +1,8 @@
+{
+  "header": "Select a preset",
+  "preset": {
+    "empty": "Empty",
+    "norn": "Norn",
+    "wizard": "Wizard"
+  }
+}

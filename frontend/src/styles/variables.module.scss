@@ -1,0 +1,55 @@
+$background: #263238;
+$backgroundLight: #4f5b62;
+$backgroundDark: #000a12;
+
+$foreground: #eceff1;
+$foregroundLight: #fff;
+$foregroundDark: #babdbe;
+
+$primary: #6a1b9a;
+$primaryLight: #9c4dcc;
+$primaryDark: #38006b;
+
+$secondary: #3c82fa;
+$secondaryLight: #4f8efa;
+$secondaryDark: #065cf1;
+
+$alert: #f14235;
+$alertLight: #f3675d;
+$alertDark: #e91f10;
+
+$warning: #f5a623;
+$success: #7bbb44;
+
+$appBackground: #11171a;
+
+$borderRadius: 4px;
+
+:root {
+  --color-background: #{$background};
+  --color-background--light: #{$backgroundLight};
+  --color-background--dark: #{$backgroundDark};
+
+  --color-foreground: #{$foreground};
+  --color-foreground--light: #{$foregroundLight};
+  --color-foreground--dark: #{$foregroundDark};
+
+  --color-primary: #{$primary};
+  --color-primary--light: #{$primaryLight};
+  --color-primary--dark: #{$primaryDark};
+
+  --color-secondary: #{$secondary};
+  --color-secondary--light: #{$secondaryLight};
+  --color-secondary--dark: #{$secondaryDark};
+  
+  --color-alert: #{$alert};
+  --color-alert--light: #{$alertLight};
+  --color-alert--dark: #{$alertDark};
+
+  --color-warning: #{$warning};
+  --color-success: #{$success};
+
+  --color-app-background: #{$appBackground};
+
+  --border-radius: #{$borderRadius}
+}

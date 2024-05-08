@@ -1,0 +1,25 @@
+{
+  "header": "Open document",
+  "delete": {
+    "text": "Do you want to delete this save?",
+    "abort": "No",
+    "confirm": "Yes",
+    "success": "Save deleted",
+    "failure": "Could not delete save"
+  },
+  "browser": {
+    "header": "Browser saves"
+  },
+  "server": {
+    "header": "Server saves",
+    "quota": "{current} MB / {max} MB",
+    "document-count": "{current} / {max} Documents"
+  },
+  "local": {
+    "header": "Or",
+    "upload": "Open from your device"
+  },
+  "footer": {
+    "abort": "Cancel"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "info": "You can right click on every element and page to edit, duplicate or delete it. It is also possible to export an element as PNG. Clicking on an element also opens a edit panel on the right. Every element can be moved around while dragging the small handle on its top.",
+  "unit": {
+    "mm": "Millimeter",
+    "inch": "Inch",
+    "pixel": "Pixel"
+  },
+  "page": {
+    "add": "Add page",
+    "format": {
+      "a4": "DIN A4",
+      "letter": "US Letter",
+      "display": "Display",
+      "custom": "Custom"
+    },
+    "orientation": {
+      "portrait": "Portrait",
+      "landscape": "Landscape",
+      "square": "Square"
+    },
+    "background": {
+      "label": "Background",
+      "clear": "Clear background"
+    },
+    "background-image": {
+      "label": "Background images",
+      "new": "Add new background image",
+      "tooltip": {
+        "change": "Click to change"
+      },
+      "masks": "Masks"
+    },
+    "select": {
+      "label": "Select page",
+      "page": "Page "
+    },
+    "context-menu": {
+      "new": {
+        "after": "Insert new page after this",
+        "before": "Insert new page before this"
+      },
+      "duplicate": "Duplicate page",
+      "delete": "Delete this page",
+      "settings": {
+        "label": "Page settings",
+        "background": "Change background",
+        "background_image": "Change background images"
+      },
+      "defaults": {
+        "label": "Document settings",
+        "change": "Change document defaults"
+      }
+    },
+    "element": {
+      "default": {
+        "vertical": {
+          "context-menu": {
+            "edit": "Edit",
+            "duplicate": "Duplicate",
+            "export": "Export as PNG",
+            "delete": "Delete"
+          }
+        },
+        "horizontal": {
+          "context-menu": {
+            "column": {
+              "label": "Column",
+              "add": {
+                "left": "Add column",
+                "right": "Add column"
+              },
+              "delete": "Delete column"
+            }
+          }
+        }
+      }
+    }
+  },
+  "name": "Name",
+  "design": "Design",
+  "pageSize": "Page size",
+  "background": "Background",
+  "footer": {
+    "label": "Footer",
+    "paging": {
+      "label": "Paging",
+      "position": {
+        "label": "Position",
+        "left": "Left",
+        "center": "Center",
+        "right": "Right",
+        "alternate": "Alternate position"
+      }
+    }
+  }
+}

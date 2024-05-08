@@ -1,0 +1,26 @@
+{
+  "header": "Spreadsheet editor",
+  "info": "You can right click on a cell, row or column to insert new entries and duplicate or delete existing ones.",
+  "cancel": "Cancel",
+  "save": "Save",
+  "context-menu": {
+    "row": {
+      "label": "Row",
+      "add": {
+        "before": "Insert new row before this",
+        "after": "Insert new row after this"
+      },
+      "duplicate": "Duplicate row",
+      "delete": "Delete row"
+    },
+    "column": {
+      "label": "Column",
+      "add": {
+        "before": "Insert new column before this",
+        "after": "Insert new column after this"
+      },
+      "duplicate": "Duplicate column",
+      "delete": "Delete column"
+    }
+  }
+}

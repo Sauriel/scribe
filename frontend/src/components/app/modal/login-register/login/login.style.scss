@@ -1,0 +1,50 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1em;
+
+  .form-errors {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--color-alert);
+    font-size: 0.8em;
+
+    > .form-error {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px -10px;
+
+  & > .btn {
+    flex-grow: 0;
+  }
+}
+
+.password-forgotten-tooltip {
+  display: block;
+  margin-top: -1rem;
+}
+
+.password-forgotten-link {
+  font-size: 0.7em;
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: not-allowed;
+  }
+
+  &:not([disabled]) {
+    margin-top: -0.8rem;
+
+    &:hover {
+      color: var(--color-foreground--dark)
+    }
+  }
+}

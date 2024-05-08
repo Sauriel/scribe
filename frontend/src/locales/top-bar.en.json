@@ -1,0 +1,47 @@
+{
+  "file": {
+    "label": "File",
+    "new": "New",
+    "open": "Open",
+    "save": "Save",
+    "export": "Export",
+    "import": "Import"
+  },
+  "edit": {
+    "label": "Edit",
+    "undo": {
+      "label": "Undo: {action}",
+      "shortcut": "Ctrl+Z"
+    },
+    "redo": {
+      "label": "Redo: {action}",
+      "shortcut": "Ctrl+Y"
+    }
+  },
+  "document": {
+    "label": "Document",
+    "defaults": "Change defaults"
+  },
+  "page": {
+    "label": "Page",
+    "background": "Change background",
+    "images": "Background Images"
+  },
+  "discord": "Join our community",
+  "patreon": "Support us",
+  "view": {
+    "label": "View",
+    "home": "Home",
+    "edit": "Document editor",
+    "library": "Library"
+  },
+  "language-switcher": {
+    "en": "English",
+    "de": "German"
+  },
+  "user": {
+    "profile": "Profile",
+    "login-register": "Login/Register",
+    "logout": "Logout"
+  }
+}

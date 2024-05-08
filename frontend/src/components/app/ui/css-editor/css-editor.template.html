@@ -1,0 +1,31 @@
+<div class="css-editor">
+  <heading>{{ $t("css-editor.header") }}</heading>
+  <foldout v-if="hints.length > 0">
+    <template #header>
+      {{ $t("css-editor.hints.header") }}
+    </template>
+    <table class="css-hints">
+      <template v-for="(hint, index) of hints" :key="index">
+        <tr v-if="hint.long">
+          <td class="css-selector" colspan="2">
+            <code>{{ hint.selector }}</code>
+          </td>
+        </tr>
+        <tr v-if="hint.long">
+          <td class="description" colspan="2">
+            {{ hint.description }}
+          </td>
+        </tr>
+        <tr v-else>
+          <td class="css-selector">
+            <code>{{ hint.selector }}</code>
+          </td>
+          <td class="description">
+            {{ hint.description }}
+          </td>
+        </tr>
+      </template>
+    </table>
+  </foldout>
+  <prism-editor v-model="internalValue" :highlight="highlighter" />
+</div>

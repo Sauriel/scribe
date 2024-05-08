@@ -1,0 +1,12 @@
+{
+  "close": "Cancel",
+  "apply": "OK",
+  "smartypants": {
+    "label": "Optimize quotes, double dashes and ellipsis",
+    "info": "This changes straight and backtick quotes into curly ones, double and trippe dashes into long dashes and three consecutive dots into a single three dot symbol."
+  },
+  "widont": {
+    "label": "Avoid widows (final line with only one word)",
+    "info": "This avoids that the last line has only one word in it."
+  }
+}

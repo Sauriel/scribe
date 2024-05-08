@@ -1,0 +1,83 @@
+<div class="center">
+  <div class="welcome">
+    <heading>
+      <i18n-t keypath="home.welcome.header.text">
+        <template #app>
+          {{ $t("global.app.name") }}<span class="version">{{ scribeVersion }}</span
+          ><span class="app-version" @click="showChangelog">v{{ appVersion }}</span>
+        </template>
+      </i18n-t>
+    </heading>
+    <div class="quick-start">
+      <div class="quick-start-element quick-start-element--create" @click="createNewDocument">
+        <font-awesome-icon icon="plus" />
+        <caption class="quick-start-element-title">
+          {{
+            $t("home.welcome.quickstart.create")
+          }}
+        </caption>
+      </div>
+      <div class="quick-start-element quick-start-element--open" @click="showOpenDocumentModal">
+        <font-awesome-icon icon="folder-open" />
+        <caption class="quick-start-element-title">
+          {{
+            $t("home.welcome.quickstart.open")
+          }}
+        </caption>
+      </div>
+      <div
+        class="quick-start-element quick-start-element--open-last"
+        :class="{
+          'quick-start-element--disabled': !lastOpenDocumentKey,
+        }"
+        @click="openLastDocument"
+      >
+        <font-awesome-layers>
+          <font-awesome-icon icon="folder-open" />
+          <font-awesome-icon icon="history" />
+        </font-awesome-layers>
+        <caption class="quick-start-element-title">
+          {{
+            $t("home.welcome.quickstart.open-last")
+          }}
+        </caption>
+      </div>
+      <router-link :to="libraryRoute" custom v-slot="{ navigate }">
+        <div class="quick-start-element quick-start-element--library"  @click="navigate">
+          <font-awesome-icon icon="th" />
+          <caption class="quick-start-element-title">
+            {{
+            $t("home.welcome.quickstart.library")
+            }}
+          </caption>
+        </div>
+      </router-link>
+      <div class="quick-start-element quick-start-element--user" v-if="!isLoggedIn" @click="openLoginRegister">
+        <font-awesome-icon icon="user" />
+        <caption class="quick-start-element-title">
+          {{
+            $t("home.welcome.quickstart.login-register")
+          }}
+        </caption>
+      </div>
+    </div>
+    <info :text="$t('home.welcome.info')" />
+    <i18n-t keypath="home.welcome.footer.text" tag="footer" class="footer">
+      <template #create>
+        <a class="footer-link" @click="createNewDocument">{{ $t("home.welcome.footer.create") }}</a>
+      </template>
+      <template #library>
+        <a class="footer-link footer-link--disabled">{{ $t("home.welcome.footer.library") }}</a>
+      </template>
+      <template #register>
+        <a class="footer-link footer-link--disabled">{{ $t("home.welcome.footer.register") }}</a>
+      </template>
+      <template #tutorial>
+        <a class="footer-link footer-link--disabled">{{ $t("home.welcome.footer.tutorial") }}</a>
+      </template>
+      <template #readme>
+        <a class="footer-link footer-link--disabled">{{ $t("home.welcome.footer.readme") }}</a>
+      </template>
+    </i18n-t>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "header": "Create a new document",
+  "info": "All these settings can be changed at any time. And the defaults can also be changed for each page individually.",
+  "content": {
+    "basics": "Basics",
+    "defaults": "Modify defaults"
+  },
+  "footer": {
+    "abort": "Cancel",
+    "create": "Create"
+  }
+}

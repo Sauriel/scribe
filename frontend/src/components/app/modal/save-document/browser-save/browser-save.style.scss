@@ -1,0 +1,49 @@
+.browser-save {
+  padding-top: 1rem;
+  min-height: 30vh;
+}
+
+.saved-documents {
+  padding: 0;
+  margin: 0.5rem -0.5rem 0 0;
+  list-style: none;
+  max-height: 30vh;
+  overflow-x: auto;
+  padding-right: 0.5rem;
+
+  .saved-document:last-child {
+    margin-bottom: 0;
+  }
+}.save-document-button {
+  color: var(--color-foreground);
+  border: none;
+  width: 100%;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.saved-document,
+.save-document-button {
+  display: flex;
+  background-color: var(--color-background--dark);
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+
+  &:hover {
+    background-color: var(--color-background--light);
+  }
+
+  .delete-icon {
+    flex: 0 0 auto;
+    margin: -0.5rem;
+    width: 36px;
+    height: 36px;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+  }
+}

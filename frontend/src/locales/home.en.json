@@ -1,0 +1,23 @@
+{
+  "welcome": {
+    "header": {
+      "text": "Welcome to {app}"
+    },
+    "quickstart": {
+      "create": "Create",
+      "open": "Open",
+      "open-last": "Open Recent",
+      "library": "Library",
+      "login-register": "Login / Register"
+    },
+    "info": "<p>In many places in Scribe you can influence things with a right click. Also, there is often a small ( i ) that provides information about what you can do when hovering over it.</p><p>We would also be happy if you join our <a href=\"https://discord.gg/JDxGbK8f3n\" target=\"_blank\">Discord community</a> or support us on <a href=\"https://patreon.com/scribe_tabletop_publisher\" target=\"_blank\">Patreon</a>.</p>",
+    "footer": {
+      "text": "New here? You can {create}, {library} or {register}. If you are feeling lost we also have a {tutorial} and a {readme} to cover all your questions.",
+      "create": "create a new document",
+      "library": "browse our library",
+      "register": "register yourself",
+      "tutorial": "tutorial",
+      "readme": "readme"
+    }
+  }
+}

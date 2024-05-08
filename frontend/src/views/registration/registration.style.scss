@@ -1,0 +1,17 @@
+.center {
+  width: 100%;
+}
+
+.registration-complete {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-background);
+  width: 320px;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+
+  .info {
+    margin-bottom: 1rem;
+  }
+}

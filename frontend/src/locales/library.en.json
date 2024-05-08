@@ -1,0 +1,9 @@
+{
+  "document": {
+    "author": "by {author}",
+    "page-count": "one Page | {count} Pages"
+  },
+    "paging": {
+      "page": "Page {current} of {max} Pages"
+    }
+}

@@ -1,0 +1,41 @@
+.pro-guard {
+  position: relative;
+
+  &--forbidden {
+    &:deep(> *:not(.pro-guard--forbidden-info)) {
+      opacity: 0.25;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    &-info {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      &::after {
+        display: none;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-background--dark);
+        opacity: 0.5;
+        z-index: 2;
+      }
+
+      & > .info {
+        max-width: 80%;
+        box-shadow: 2px 2px 4px 0 var(--color-background--light);
+        z-index: 3;
+      }
+    }
+  }
+}

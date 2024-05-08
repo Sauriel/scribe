@@ -1,0 +1,48 @@
+{
+  "header": "User Profile: {name}",
+  "table": {
+    "name": {
+      "header": "Name",
+      "changed": {
+        "successfully": "Username changed!"
+      }
+    },
+    "email": {
+      "header": "Email",
+      "changed": {
+        "successfully": "Email changed!"
+      }
+    },
+    "password": {
+      "header": "Password",
+      "value": "********",
+      "placeholder": {
+        "password": "Please enter a new password",
+        "repeatedPassword": "Please reenter the password"
+      },
+      "changed": {
+        "successfully": "Password changed!"
+      }
+    },
+    "patreon": {
+      "header": "Patreon",
+      "linkPatreon": "Link your Patreon account",
+      "account": {
+        "header": "Patreon Account",
+        "value": "{name} ({email})"
+      },
+      "status": {
+        "header": "Patreon Status",
+        "value": {
+          "active_patron": "Active",
+          "declined_patron": "Declined",
+          "former_patron": "Not active"
+        }
+      },
+      "tier": {
+        "header": "Patreon Tier",
+        "none": "None"
+      }
+    }
+  }
+}

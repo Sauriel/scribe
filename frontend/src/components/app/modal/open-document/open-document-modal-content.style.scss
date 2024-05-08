@@ -1,0 +1,51 @@
+.open-document {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 560px;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px -10px;
+
+    &>button {
+      flex-grow: 0;
+    }
+  }
+}
+
+.upload-btn {
+  padding: 0;
+  margin: 0;
+
+  &:deep(.btn-strong) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hide-input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 99;
+    cursor: pointer;
+
+    >input {
+      display: none;
+    }
+  }
+}

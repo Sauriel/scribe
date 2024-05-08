@@ -1,0 +1,36 @@
+<div class="login-register-content">
+  <div class="login-form">
+    <input-field v-model="v$.loginName.$model" :placeholder="$t('login-register.login.loginName')"
+      :hint="$t('login-register.login.loginName')" hide-hint-if-empty />
+    <ul v-if="v$.loginName.$error" class="form-errors">
+      <li v-for="error of v$.loginName.$errors" :key="error.$uid" class="form-error">
+        {{ $t("login-register.login.error." + error.$property + "." + error.$validator) }}
+      </li>
+    </ul>
+    <input-field type="password" v-model="v$.loginPassword.$model" :placeholder="$t('login-register.login.loginPassword')"
+      :hint="$t('login-register.login.loginPassword')" hide-hint-if-empty />
+    <tooltip class="password-forgotten-tooltip" position="bottom" v-if="hasLoginNameError">
+      <a class="password-forgotten-link" :disabled="hasLoginNameError">
+        {{ $t("login-register.login.passwordForgotten.button") }}
+      </a>
+      <template #tooltip>
+        {{ $t("login-register.login.passwordForgotten.tooltip") }}
+      </template>
+    </tooltip>
+    <a class="password-forgotten-link" v-else @click="onPasswordForgottenClick">
+      {{ $t("login-register.login.passwordForgotten.button") }}
+    </a>
+    <ul v-if="v$.loginPassword.$error" class="form-errors">
+      <li v-for="error of v$.loginPassword.$errors" :key="error.$uid" class="form-error">
+        {{ $t("login-register.login.error." + error.$property + "." + error.$validator) }}
+      </li>
+    </ul>
+    <checkbox v-model="keepLoggedIn" :label="$t('login-register.login.rememberMe')" />
+  </div>
+</div>
+<footer class="footer">
+  <slot name="footer" />
+  <btn @click="login" :disabled="hasErrors">
+    {{ $t("login-register.login.action") }}
+  </btn>
+</footer>

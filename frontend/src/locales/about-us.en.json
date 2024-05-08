@@ -1,0 +1,14 @@
+{
+  "header": "About {appName}",
+  "roadmap": "You can follow the current development progress and the planned features <a href=\"https://trello.com/b/k4yj0LK4/backlog\" target=\"_blank\">here</a>.",
+  "3rd-party": {
+    "header": "Third-party Components",
+    "mask-brushes": {
+      "header": "Background Image Masks",
+      "text": "These mask are made with brushes from&nbsp;<a href=\"https://www.deviantart.com/pstutorialsws/art/Watercolor-Splatters-160738581\" target=\"_blank\">pstutorialsws</a>"
+    }
+  },
+  "footer": {
+    "close": "Close"
+  }
+}

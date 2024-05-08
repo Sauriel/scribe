@@ -1,0 +1,10 @@
+input DocumentInput {
+  id: String
+  private: Boolean
+  thumb: String
+  version: Float!
+  name: String!
+  format: JSONObject!
+  pages: [JSONObject!]!
+  defaults: JSONObject!
+}

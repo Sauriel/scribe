@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+.css-editor {
+  .prism-editor-wrapper {
+    font-family: "Fira Sans", monospace;
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 1em;
+    background-color: var(--color-foreground);
+    color: var(--color-background);
+
+    &:deep(.prism-editor__textarea:focus) {
+      outline: none;
+    }
+  }
+
+  .foldout {
+    margin-bottom: 1rem;
+
+    &:deep(.foldout-content) {
+      max-height: 40vh;
+      overflow-x: auto;
+    }
+    
+    .css-hints {
+      width: 100%;
+      
+      .css-selector {
+        font-family: "Fira Sans", monospace;
+        background-color: var(--color-foreground);
+        color: var(--color-background);
+      }
+    }
+  }
+}

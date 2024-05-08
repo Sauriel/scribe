@@ -1,0 +1,9 @@
+query {
+  patreonInformation {
+    status
+    checkedOn
+    tier
+    tierId
+    discord
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "mode": {
+    "login": "Login",
+    "register": "Register"
+  },
+  "register": {
+    "info": "After successful registration you will receive an email to confirm your email address.<br/>If you support us on Patreon you can link your account in the profile after this to enjoy your benefits.",
+    "email": "Email",
+    "username": "Username",
+    "password": "Password",
+    "repeatedPassword": "Retype Password",
+    "action": "Register",
+    "error": {
+      "email": {
+        "required": "Please enter a Email",
+        "email": "Please enter a valid Email"
+      },
+      "username": {
+        "required": "Please enter a Username"
+      },
+      "password": {
+        "required": "Please enter a Password",
+        "minLength": "Your Password has to be at least 8 characters long",
+        "complexity": "Your Password should be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit and one special character"
+      },
+      "repeatedPassword": {
+        "required": "Please repeat your Password",
+        "sameAsPassword": "Please enter the same Password as above"
+      }
+    }
+  },
+  "login": {
+    "loginName": "Email or Username",
+    "loginPassword": "Password",
+    "rememberMe": "Keep me logged in",
+    "action": "Login",
+    "error": {
+      "loginName": {
+        "required": "Please enter a Email or Username"
+      },
+      "loginPassword": {
+        "required": "Please enter a password"
+      }
+    },
+    "passwordForgotten": {
+      "button": "Forgot password?",
+      "tooltip": "Please enter an Email or Username",
+      "success": "We send a email to you. Please follow the instructions",
+      "failure": "It seems you are not a registered Scribe user."
+    }
+  },
+  "footer": {
+    "close": "Close"
+  }
+}

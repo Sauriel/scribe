@@ -1,0 +1,10 @@
+<div class="browser-open">
+  <ul class="saved-documents">
+    <li class="saved-document" v-for="save of saves" :key="save.key" @click="open(save.key)">
+      <span>
+        {{ save.value }}
+      </span>
+      <btn tile small alert icon="trash-alt" class="delete-icon" @click.stop="deleteSave(save.key)" />
+    </li>
+  </ul>
+</div>

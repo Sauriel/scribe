@@ -1,0 +1,20 @@
+query softLogin($userId: String!, $refreshToken: String!) {
+  softLogin(userId: $userId, refreshToken: $refreshToken) {
+    id
+    username
+    email
+    accessToken
+    accessTokenExpireDate
+    refreshToken
+    refreshTokenExpireDate
+    patreon {
+      name
+      email
+      status
+      checkedOn
+      tier
+      tierId
+      discord
+    }
+  }
+}

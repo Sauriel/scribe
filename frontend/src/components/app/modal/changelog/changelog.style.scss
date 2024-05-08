@@ -1,0 +1,28 @@
+.changelog {
+  max-height: 60vh;
+  overflow-x: auto;
+  padding-right: 0.5rem;
+  max-width: calc(33.3333333333vw - 4rem);
+
+  &:deep(h2) {
+    text-align: center;
+  }
+
+  &:deep(h3) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &:deep(h3 > span:last-child) {
+    font-size: 0.7em;
+  }
+
+  &:deep(ul) {
+    padding-left: 20px;
+  }
+
+  &:deep(li) {
+    margin: 0.25em 0;
+  }
+}

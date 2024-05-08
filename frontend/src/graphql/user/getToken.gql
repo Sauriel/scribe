@@ -1,0 +1,6 @@
+query getToken($refreshToken: String!, $userId: String!) {
+  getToken(refreshToken: $refreshToken, userId: $userId) {
+    accessToken
+    accessTokenExpireDate
+  }
+}

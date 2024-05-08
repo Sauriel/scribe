@@ -1,0 +1,40 @@
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1em;
+
+  .form-errors {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--color-alert);
+    font-size: 0.8em;
+
+    > .form-error {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.login-register-content {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  left: 50%;
+  top: -200px;
+  margin-left: -200px;
+  width: 400px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px -10px;
+
+  & > .btn {
+    flex-grow: 0;
+  }
+}

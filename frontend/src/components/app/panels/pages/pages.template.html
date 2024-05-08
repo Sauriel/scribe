@@ -1,0 +1,18 @@
+<div class="page-overview-panel">
+  <heading :info="!onlyView ? $t('page-overview.info') : undefined">
+    {{ $t("page-overview.header") }}
+  </heading>
+  <draggable class="page-overview" tag="transition-group" :component-data="{
+        tag: 'ul',
+        type: 'transition-group',
+        name: !drag ? 'flip-list' : null,
+      }" :model-value="pages" :animation="200" :disabled="false" ghost-class="ghost" @start="drag = true"
+    @end="drag = false" @change="onListChange" item-key="index">
+    <template #item="{ index }">
+      <div class="page-overview-entry" :class="{ 'page-overview-entry--selected': selectedPage === index }"
+        :style="pagePreviewStyle" @click="selectedPage = index">
+        <page :index="index" :zoom="zoom" :document="document" locked />
+      </div>
+    </template>
+  </draggable>
+</div>

@@ -1,0 +1,161 @@
+.workspace {
+  position: relative;
+  background-color: var(--color-app-background);
+  overflow-y: auto;
+
+  @media print {
+    background-color: white;
+  }
+
+  &-title {
+    position: absolute;
+    top: 0.3em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-background);
+    padding: 0.5em 2em;
+    z-index: 999;
+    border: 1px solid var(--color-background--dark);
+    border-radius: 1000px;
+    opacity: 0.25;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media print {
+      display: none;
+    }
+  }
+
+  &-quicktools {
+    position: absolute;
+    top: 0.3em;
+    left: 0.3em;
+    display: flex;
+    gap: 4px;
+
+    .quicktool {
+      flex: 0 0 auto;
+      font-size: 1.2rem;
+      background-color: var(--color-background);
+      border: 1px solid var(--color-background--dark);
+      border-radius: var(--border-radius);
+      height: 2.2em;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.75;
+      transition: opacity 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &--disabled {
+        cursor: default;
+        transition: opacity 0s linear;
+        opacity: 0.25;
+        pointer-events: none;
+
+        &:hover {
+          opacity: 0.25;
+        }
+      }
+    }
+
+    @media print {
+      display: none;
+    }
+  }
+
+  &-info {
+    position: absolute;
+    top: 0.3em;
+    right: 1.1em;
+
+    &:deep(.tooltip-trigger) {
+      font-size: 1.5rem;
+    }
+
+    &:deep(.tooltip) {
+      min-width: 25vw;
+    }
+
+    @media print {
+      display: none;
+    }
+  }
+
+  &-pages {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    max-height: calc(100vh - 50px);
+    overflow-x: auto;
+
+    @media print {
+      max-height: initial;
+      padding: 0;
+      align-items: flex-start;
+    }
+
+    .zoomable-page {
+      flex: 0 0 auto;
+      margin-bottom: 1rem;
+      position: relative;
+      width: calc(var(--page-zoom, 1) * var(--page-width));
+      height: calc(var(--page-zoom, 1) * var(--page-height));
+
+      @media print {
+        margin-bottom: 0;
+        overflow: hidden;
+        width: var(--page-width);
+        height: var(--page-height);
+      }
+
+      .waypoint {
+        position: absolute;
+        top: 49%;
+        left: 0;
+        bottom: 49%;
+        right: 0;
+        z-index: -1;
+      }
+    }
+
+    .add-new-btn {
+      min-height: auto;
+      height: 50px;
+
+      @media print {
+        display: none;
+      }
+    }
+  }
+
+  .page-zoom {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 1.5em;
+    background-color: var(--color-background);
+    opacity: 0.25;
+    transition: opacity 0.2s ease-in-out;
+
+    @media print {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

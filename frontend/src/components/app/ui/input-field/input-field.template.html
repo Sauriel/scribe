@@ -1,0 +1,15 @@
+<div class="input-wrapper" :style="style" :class="{ small: small }">
+  <input
+    v-model="internalValue"
+    ref="input"
+    :type="type"
+    :disabled="disabled"
+    :placeholder="placeholder"
+    :step="step"
+    @blur="$emit('blur', $event)"
+    @keyup.enter.self="$emit('enter', $event)"
+  />
+  <transition name="fade">
+    <span class="hint" v-if="showHint">{{ hint }}</span>
+  </transition>
+</div>

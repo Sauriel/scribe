@@ -1,0 +1,13 @@
+{
+  "header": "Export as Image",
+  "info": "It could be possible, that some images can not be exported. This is due to some security settings on the server where the image comes from and can not be fixed (yet).",
+  "settings": {
+    "page": "Select page",
+    "scale": "Size",
+    "generate": "Generate Image",
+    "download": "Download"
+  },
+  "footer": {
+    "close": "Close"
+  }
+}

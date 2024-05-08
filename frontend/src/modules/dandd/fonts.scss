@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'Book Insanity';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/bookinsanity/bookinsanity-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/bookinsanity/bookinsanity-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Book Insanity';
+  font-style: italic;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/bookinsanity/bookinsanity_italic-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/bookinsanity/bookinsanity_italic-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Book Insanity';
+  font-style: normal;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/bookinsanity/bookinsanity_bold-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/bookinsanity/bookinsanity_bold-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Book Insanity';
+  font-style: italic;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/bookinsanity/bookinsanity_bold_italic-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/bookinsanity/bookinsanity_bold_italic-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Dungeon Drop Case';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/dungeon_drop_case/dungeon_drop_case-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/dungeon_drop_case/dungeon_drop_case-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Mr Eaves Small Caps';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/mr_eaves/mr_eaves_small_caps-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/mr_eaves/mr_eaves_small_caps-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Nodesto Caps Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/nodesto_caps_condensed/nodesto_caps_condensed-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/nodesto_caps_condensed/nodesto_caps_condensed-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Nodesto Caps Condensed';
+  font-style: italic;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/nodesto_caps_condensed/nodesto_caps_condensed_italic-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/nodesto_caps_condensed/nodesto_caps_condensed_italic-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Nodesto Caps Condensed';
+  font-style: normal;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/nodesto_caps_condensed/nodesto_caps_condensed_bold-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/nodesto_caps_condensed/nodesto_caps_condensed_bold-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Nodesto Caps Condensed';
+  font-style: italic;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/nodesto_caps_condensed/nodesto_caps_condensed_bold_italic-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/nodesto_caps_condensed/nodesto_caps_condensed_bold_italic-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans Remake';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans Remake';
+  font-style: italic;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_italic-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_italic-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans Remake';
+  font-style: normal;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_bold-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_bold-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans Remake';
+  font-style: italic;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_bold_italic-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_bold_italic-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans-webfont__no-text-figures-numerals.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans-webfont__no-text-figures-numerals.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_italic-webfont__no-text-figures-numerals.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_italic-webfont__no-text-figures-numerals.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_bold-webfont__no-text-figures-numerals.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_bold-webfont__no-text-figures-numerals.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans';
+  font-style: italic;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_bold_italic-webfont__no-text-figures-numerals.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans/scaly_sans_bold_italic-webfont__no-text-figures-numerals.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans Caps';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans_caps/scaly_sans_caps-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans_caps/scaly_sans_caps-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans Caps';
+  font-style: italic;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans_caps/scaly_sans_caps_italic-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans_caps/scaly_sans_caps_italic-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans Caps';
+  font-style: normal;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans_caps/scaly_sans_caps_bold-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans_caps/scaly_sans_caps_bold-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Scaly Sans Caps';
+  font-style: italic;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/scaly_sans_caps/scaly_sans_caps_bold_italic-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/scaly_sans_caps/scaly_sans_caps_bold_italic-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Solbera Imitation';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/solbera_imitation/solbera_imitation-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/solbera_imitation/solbera_imitation-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Zatanna Misdirection';
+  font-style: normal;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/zatanna_misdirection/zatanna_misdirection-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/zatanna_misdirection/zatanna_misdirection-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Zatanna Misdirection';
+  font-style: italic;
+  font-weight: normal;
+  src: local(''),
+       url('/src/assets/fonts/dandd/zatanna_misdirection/zatanna_misdirection_italic-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/zatanna_misdirection/zatanna_misdirection_italic-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Zatanna Misdirection';
+  font-style: normal;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/zatanna_misdirection/zatanna_misdirection_bold-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/zatanna_misdirection/zatanna_misdirection_bold-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Zatanna Misdirection';
+  font-style: italic;
+  font-weight: bold;
+  src: local(''),
+       url('/src/assets/fonts/dandd/zatanna_misdirection/zatanna_misdirection_bold_italic-webfont.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/src/assets/fonts/dandd/zatanna_misdirection/zatanna_misdirection_bold_italic-webfont.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

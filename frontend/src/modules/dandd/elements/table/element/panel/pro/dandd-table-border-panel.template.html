@@ -1,0 +1,23 @@
+<heading>{{ $t("panel.DandDTableElementPanel.border-images.header") }}</heading>
+<div class="class-table-border">
+  <template
+    v-for="(src, position) of borderImage"
+    :key="position"
+  >
+    <img
+      v-if="src"
+      class="class-table-border-image"
+      :class="'class-table-border-image--' + position"
+      :src="src"
+      @click="changeImage(position, src)"
+      @contextmenu.prevent.stop="showContextMenu($event, position)"
+    />
+    <span
+      v-else
+      class="class-table-border-image"
+      :class="'class-table-border-image--' + position"
+      @click="changeImage(position, src)"
+      @contextmenu.prevent.stop="showContextMenu($event, position)"
+    />
+  </template>
+</div>

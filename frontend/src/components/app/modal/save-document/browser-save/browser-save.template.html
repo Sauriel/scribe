@@ -1,0 +1,13 @@
+<div class="browser-save">
+  <ul class="saved-documents">
+    <li class="saved-document" v-for="save of saves" :key="save.key" @click="saveReplace(save.key)">
+      <span>
+        {{ save.value }}
+      </span>
+      <btn tile small alert icon="trash-alt" class="delete-icon" @click.stop="deleteSave(save.key)" />
+    </li>
+  </ul>
+  <button class="save-document-button" @click="save">
+    {{ $t("save-document.browser.new", { name: document.name }) }}
+  </button>
+</div>

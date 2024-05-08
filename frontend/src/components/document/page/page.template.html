@@ -1,0 +1,37 @@
+<div
+  :id="'page-' + index"
+  class="page"
+  :class="{
+    'page--locked': locked,
+    'show-overflow': hasSelectedBackgroundImage,
+  }"
+  :style="pageStyle"
+  @contextmenu.prevent="showContextMenu"
+>
+  <div class="background-images" ref="bgWrapper" :style="backgroundStyle">
+    <resizable-mask-image
+      class="background-images-entry"
+      v-for="(image, bgIndex) of backgroundImages"
+      :key="'rmi-' + bgIndex"
+      :modelValue="image"
+      :wrapper-rect="backgroundsRect"
+      :disabled="!isSelectedBackgroundImage(bgIndex)"
+      :zoom="zoom"
+      @update:modelValue="onModelChange($event, bgIndex)"
+    />
+  </div>
+  <div
+    class="page-content"
+    :style="contentStyle"
+    :class="{ 'page-content--moving-background-image': hasSelectedBackgroundImage }"
+  >
+    <vertical-layout-element :model="elements" :locked="locked" :document="document" />
+  </div>
+  <footer v-if="footer" class="page-footer" :class="'page-footer--' + pagingPosition">
+    <img v-if="footerImage" :src="footerImage" class="page-footer-image" :style="footerStyle" />
+    <div v-if="footer.text" class="page-footer-text" v-safe-html="footer.text" />
+    <div v-if="footer.paging.show" class="page-footer-paging">
+      {{ index + 1 }}
+    </div>
+  </footer>
+</div>

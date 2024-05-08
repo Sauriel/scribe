@@ -1,0 +1,36 @@
+@import "fonts.module.scss";
+@import "variables.module.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}

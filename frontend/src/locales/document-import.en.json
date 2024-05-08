@@ -1,0 +1,15 @@
+{
+  "header": "Import document",
+  "norn": {
+    "header": "Norn Prototype",
+    "info": "The import from the Norn prototype is an experimental feature. But I wanted to implement it for you. Unfortunately not everything can be imported. For example, at the moment you can only import images that are on a web server, not those that you have uploaded.",
+    "upload": "Import Norn Prototype JSON"
+  },
+  "notification": {
+    "success": "Document successfully imported",
+    "failure": "Could not import document"
+  },
+  "footer": {
+    "close": "Cancel"
+  }
+}

@@ -1,0 +1,78 @@
+<div class="server-save">
+  <div class="top-info">
+    <div class="server-info">
+      <div
+        class="server-info-documents"
+        :class="{
+          'server-info-documents--warning': notMuchDocumentsLeft,
+          'server-info-documents--error': noDocumentsLeft
+        }"
+      >
+        {{ $t("save-document.server.document-count", { current: serverDocumentCount, max: serverMaxDocuments }) }}
+      </div>
+      <div class="server-info-quota">
+        <div class="server-info-quota--filler" :style="serverQuota" />
+        <div class="server-info-quota--text">
+          {{ $t("save-document.server.quota", { current: serverTotalSizeMB, max: serverMaxSizeMB }) }}
+        </div>
+      </div>
+    </div>
+    <select-bar
+      v-model="listView"
+      :items="views"
+      class="view-selector"
+      round
+      shadow-border
+      alternate-colors
+    />
+  </div>
+  <div class="list-view" v-if="listView">
+    <ul class="saved-documents">
+      <li class="saved-document" v-for="save of serverSaves" :key="save.id" @click="serverSaveReplace(save.id)">
+        <span>
+          <font-awesome-icon icon="eye-slash" v-if="save.private" />
+          {{ save.name }}
+        </span>
+        <div class="save-info">
+          <span class="file-size">
+            {{ fileSize(save.size) }}
+          </span>
+          <btn tile small alert icon="trash-alt" class="delete-icon" @click.stop="deleteServerSave(save.id)" />
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="grid-view" v-else>
+    <ul class="document-grid">
+      <li class="document" v-for="save of serverSaves" :key="save.id" @click="serverSaveReplace(save.id)">
+        <img :src="save.thumb" class="thumbnail" />
+        <btn tile small alert icon="trash-alt" class="delete-icon" @click.stop="deleteServerSave(save.id)" />
+        <div class="private" v-if="save.private">
+          <font-awesome-icon icon="eye-slash" />
+        </div>
+        <div class="document-info">
+          <header class="document-name">{{ save.name }}</header>
+          <footer class="document-size">{{ fileSize(save.size) }}</footer>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="save-row">
+    <tooltip class="private-tooltip" position="bottom" v-if="allowPrivate">
+      <input-switch v-model="isPrivateDocument" class="private-switch">
+        <font-awesome-icon icon="eye" />
+        <template #off-label>
+          <font-awesome-icon icon="eye-slash" />
+        </template>
+      </input-switch>
+      <template #tooltip>
+        {{ $t("save-document.server.private") }}
+      </template>
+    </tooltip>
+    <button class="save-document-button" @click="saveToServer" :disabled="noDocumentsLeft">
+      {{ $t("save-document.server.new", { name: document.name }) }}
+    </button>
+  </div>
+  <info :text="$t('save-document.server.info')" />
+  <canvas ref="imageCanvas" class="generated-image" />
+</div>

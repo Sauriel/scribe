@@ -1,0 +1,204 @@
+{
+  "DocumentDefaultsEditPanel": {
+    "label": "Document defaults"
+  },
+  "PageBackgroundEditPanel": {
+    "label": "Page background"
+  },
+  "PageBackgroundImagesEditPanel": {
+    "label": "Background images"
+  },
+  "PageOverviewPanel": {
+    "label": "Pages"
+  },
+  "DandDHeadingElementPanel": {
+    "label": "D&D Heading",
+    "header": "Heading",
+    "custom-css": {
+      "hints": {
+        "h1": "First level headline",
+        "h2": "Second level headline",
+        "h3": "Third level headline",
+        "h4": "Fourth level headline",
+        "h5": "Fifth level headline"
+      }
+    }
+  },
+  "HorizontalLayoutElementPanel": {
+    "info": "You can right click on the list to add new entries or delete existing ones. It is also possible to drag and drop a entry to change the ordering.",
+    "label": "Columns",
+    "gutter": {
+      "label": "Gutter"
+    },
+    "columns": {
+      "label": "Columns",
+      "width": "Width",
+      "number": "Column #{number}"
+    }
+  },
+  "VerticalLayoutElementPanel": {
+    "label": "Rows"
+  },
+  "SettingsPanel": {
+    "label": "Settings"
+  },
+  "VerticalSpacingElementPanel": {
+    "label": "Space",
+    "height": "Height"
+  },
+  "DandDParagraphElementPanel": {
+    "label": "D&D Paragraph",
+    "header": "Paragraph",
+    "initial": "Initial",
+    "firstLineUppercase": "First line in uppercase",
+    "fullscreen": "Open fullscreen editor",
+    "custom-css": {
+      "hints": {
+        "initial": "The big first character",
+        "p": "All texts",
+        "strong": "Bold text",
+        "em": "Italic text",
+        "u": "Underlined text",
+        "s": "Crossed out text",
+        "a": "Links",
+        "ul": "Bullet lists",
+        "ol": "Numbered lists",
+        "li": "Entries inside of a list",
+        "img": "Images"
+      }
+    }
+  },
+  "DandDNoteElementPanel": {
+    "label": "D&D Note",
+    "header": "Note Block",
+    "type": {
+      "NOTE": "Note Block",
+      "INTRO": "Intro Block"
+    },
+    "backgroundColor": "Background",
+    "custom-css": {
+      "hints": {
+        "note": {
+          "default": "The note element",
+          "note": "The \"Note Block\" element",
+          "intro": "The \"Intro Block\" element"
+        },
+        "decoration": {
+          "default": "The decorations on all four corners",
+          "top": "The decorations on the top",
+          "bottom": "The decorations on the bottom",
+          "left": "The decorations on the left",
+          "right": "The decorations on the right"
+        }
+      }
+    }
+  },
+  "DandDTableElementPanel": {
+    "label": "D&D Table",
+    "header": "Table",
+    "type": {
+      "SIMPLE": "Simple table",
+      "CLASS": "Class table"
+    },
+    "color": "Row background",
+    "headline": "Header",
+    "spreadsheet": "Open Spreadsheet editor",
+    "custom-css": {
+      "hints": {
+        "header": "The header above the table",
+        "table": {
+          "default": "The table itself",
+          "thead": "The table header section",
+          "tbody": "The table body section",
+          "tr": "All table rows",
+          "th": "All table header cells",
+          "td": "All other table cells",
+          "wrapper": {
+            "default": "The table element",
+            "simple": "The \"Simple table\"",
+            "class": {
+              "default": "The \"Class table\"",
+              "border": {
+                "default": "The \"Class table\" border",
+                "image": {
+                  "default": "The images for the \"Class table\" border",
+                  "top-left": "The top left image for the \"Class table\" border",
+                  "top": "The top image for the \"Class table\" border",
+                  "top-right": "The top right image for the \"Class table\" border",
+                  "right": "The right image for the \"Class table\" border",
+                  "bottom-right": "The bottom right image for the \"Class table\" border",
+                  "bottom": "The bottom image for the \"Class table\" border",
+                  "bottom-left": "The bottom left image for the \"Class table\" border",
+                  "left": "The top image for the \"Class table\" border"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "border-images": {
+      "header": "Border Images",
+      "context": {
+        "header": "Border Image",
+        "reset": "Reset",
+        "delete": "Delete"
+      }
+    }
+  },
+  "DandDMonsterElementPanel": {
+    "label": "D&D Monster",
+    "header": "Monster",
+    "columns": {
+      "one": "One columns design",
+      "two": "Two column design"
+    },
+    "numbersFix": "Font",
+    "dialog": "Open monster editor",
+    "reset": "Clear monster",
+    "custom-css": {
+      "hints": {
+        "monster": {
+          "default": "The monster block itself",
+          "two-columns": "The two column layout",
+          "numbers-fix": "The variant with \"Scaly Sans\" as font"
+        },
+        "basics": "The part with the name, size and type",
+        "name": "The monster name",
+        "arrow-line": "The horizontal lines",
+        "combat-stats": "AC, Hit Points, etc.",
+        "stats": "STR, DEX, CON, INT, WIS, CHA",
+        "special-traits": "The part with saving throws, senes, CR, etc.",
+        "ability": {
+          "default": "An ability (eg. actions)",
+          "name": "The name of an ability",
+          "description": "The description of an ability",
+          "italic": "eg. weapon type of attacks",
+          "text": "eg. damage of attacks"
+        },
+        "actions": {
+          "default": "List of actions, reactions or bonus actions",
+          "header": "\"Actions\", \"Reactions\" or \"Bonus Actions\"",
+          "list": "The list itself",
+          "action": "An action, reaction or bonus action"
+        },
+        "legendary-description": "The description for legendary or mythic actions",
+        "row": "A row with header and text. eg. languages",
+        "double-row": "A row with two entries. (eg. CR and Proficiency Bonus)",
+        "header": "A header inside of a row"
+      }
+    }
+  },
+  "export": {
+    "label": "Export",
+    "header": "Export Document",
+    "print-pdf": {
+      "explanation": "<p>You can export your document as PDF by printing this web page.</p><p>The following settings must be made in the Print dialog to get a nice PDF:</p><ul><li><strong>Destination:</strong> “Save as PDF”</li><li><strong>Paper size:</strong> {paperSize}</li><li><strong>Orientation:</strong> {pageOrientation}</li><li><strong>Margins:</strong> “None”</li><li><strong>Options:</strong> enable “Background graphics” or “Print backgrounds”</li></ul>",
+      "button": "Export as PDF / Print"
+    },
+    "export-image": {
+      "explanation": "<p>Export your pages as an image.</p>",
+      "button": "Export as Image"
+    }
+  }
+}

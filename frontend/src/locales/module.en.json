@@ -1,0 +1,237 @@
+{
+  "dandd": {
+    "rules": {
+      "dice": "d{eyes}",
+      "stats": {
+        "strength": {
+          "label": "Strength",
+          "short": "Str"
+        },
+        "dexterity": {
+          "label": "Dexterity",
+          "short": "Dex"
+        },
+        "constitution": {
+          "label": "Constitution",
+          "short": "Con"
+        },
+        "intelligence": {
+          "label": "Intelligence",
+          "short": "Int"
+        },
+        "wisdom": {
+          "label": "Wisdom",
+          "short": "Wis"
+        },
+        "charisma": {
+          "label": "Charisma",
+          "short": "Cha"
+        },
+        "modifier": "modifier"
+      },
+      "exp": {
+        "short": "XP"
+      },
+      "cr": {
+        "short": "CR"
+      },
+      "size": {
+        "Tiny": "Tiny",
+        "Small": "Small",
+        "Medium": "Medium",
+        "Large": "Large",
+        "Huge": "Huge",
+        "Gargantuan": "Gargantuan"
+      },
+      "alignment": {
+        "Any_Alignment": "Any Alignment",
+        "Unaligned": "Unaligned",
+        "Lawful_Good": "Lawful Good",
+        "Lawful_Neutral": "Lawful Neutral",
+        "Lawful_Evil": "Lawful Evil",
+        "Neutral_Good": "Neutral Good",
+        "Neutral": "Neutral",
+        "Neutral_Evil": "Neutral Evil",
+        "Chaotic_Good": "Chaotic Good",
+        "Chaotic_Neutral": "Chaotic Neutral",
+        "Chaotic_Evil": "Chaotic Evil",
+        "Typically_Lawful_Good": "Typically Lawful Good",
+        "Typically_Lawful_Neutral": "Typically Lawful Neutral",
+        "Typically_Lawful_Evil": "Typically Lawful Evil",
+        "Typically_Neutral_Good": "Typically Neutral Good",
+        "Typically_Neutral": "Typically Neutral",
+        "Typically_Neutral_Evil": "Typically Neutral Evil",
+        "Typically_Chaotic_Good": "Typically Chaotic Good",
+        "Typically_Chaotic_Neutral": "Typically Chaotic Neutral",
+        "Typically_Chaotic_Evil": "Typically Chaotic Evil"
+      },
+      "status": {
+        "Blinded": "blinded",
+        "Charmed": "charmed",
+        "Deafened": "deafened",
+        "Exhaustion": "exhaustion",
+        "Frightened": "frightened",
+        "Grappled": "grappled",
+        "Incapacitated": "incapacitated",
+        "Invisible": "invisible",
+        "Paralyzed": "paralyzed",
+        "Petrified": "petrified",
+        "Poisoned": "poisoned",
+        "Prone": "prone",
+        "Restrained": "restrained",
+        "Stunned": "stunned",
+        "Unconscious": "unconscious"
+      },
+      "movement": {
+        "walk": "",
+        "walk_alternate": "walk",
+        "swim": "swim",
+        "fly": "fly",
+        "climb": "climb",
+        "burrow": "burrow"
+      },
+      "hit": "Hit",
+      "monster": {
+        "type": {
+          "Aberration": "Aberration",
+          "Beast": "Beast",
+          "Celestial": "Celestial",
+          "Construct": "Construct",
+          "Dragon": "Dragon",
+          "Elemental": "Elemental",
+          "Fey": "Fey",
+          "Fiend": "Fiend",
+          "Giant": "Giant",
+          "Humanoid": "Humanoid",
+          "Monstrosity": "Monstrosity",
+          "Ooze": "Ooze",
+          "Plant": "Plant",
+          "Undead": "Undead",
+          "Unknown": "Unknown"
+        }
+      },
+      "spell": {
+        "type": {
+          "abjuration": "Abjuration",
+          "conjuration": "Conjuration",
+          "divination": "Divination",
+          "enchantment": "Enchantment",
+          "evocation": "Evocation",
+          "illusion": "Illusion",
+          "necromancy": "Necromancy",
+          "transmutation": "Transmutation"
+        },
+        "level": {
+          "cantrip": "cantrip",
+          "one": "1st-level",
+          "two": "2nd-level",
+          "three": "3rd-level",
+          "four": "4th-level",
+          "five": "5th-level",
+          "six": "6th-level",
+          "seven": "7th-level",
+          "eight": "8th-level",
+          "nine": "9th-level"
+        }
+      }
+    },
+    "element": {
+      "monster": {
+        "combat-stats": {
+          "ac": "Armor Class",
+          "hp": "Hit Points",
+          "movement": "Speed"
+        },
+        "abilities": {
+          "saves": "Saving Throws",
+          "skills": "Skills",
+          "combat": {
+            "damage-vulnerabilities": "Damage Vulnerabilities",
+            "damage-resistances": "Damage Resistances",
+            "damage-immunities": "Damage Immunities",
+            "condition-immunities": "Condition Immunities"
+          },
+          "senses": {
+            "label": "Senses",
+            "passive-perception": "passive Perception"
+          },
+          "languages": "Languages",
+          "proficiency-bonus": "Proficiency Bonus",
+          "cr": "Challenge"
+        },
+        "actions": "Actions",
+        "bonus-actions": "Bonus Actions",
+        "reactions": "Reactions",
+        "legendary-actions": "Legendary Actions",
+        "mythic-actions": "Mythic Actions"
+      },
+      "spell": {
+        "type": {
+          "cantrip": "{type} {level}",
+          "ritual": "{level} {type} (ritual)",
+          "default": "{level} {type}"
+        },
+        "info": {
+          "casting-time": {
+            "header": "Casting Time:",
+            "time": {
+              "action": "{n} action | {n} actions",
+              "bonusAction": "{n} bonus action | {n} bonus actions",
+              "reaction": "{n} reaction | {n} reactions",
+              "minute": "{n} minute | {n} minutes",
+              "hour": "{n} hour | {n} hours"
+            }
+          },
+          "range": {
+            "header": "Range:",
+            "range": {
+              "self": "Self",
+              "sight": "Sight",
+              "touch": "Touch",
+              "special": "Special",
+              "unlimited": "Unlimited"
+            },
+            "distance": {
+              "feet": "{n} feet | {n} feet",
+              "mile": "{n} mile | {n} miles",
+              "meter": "{n} meter | {n} meter",
+              "kilometer": "{n} kilometer | {n} kilometer"
+            },
+            "aoe": {
+              "line": " ({range} line)",
+              "cone": " ({range} cone)",
+              "radius": " ({range} radius)",
+              "cube": " ({range} cube)",
+              "cylinder": " ({range} cylinder)",
+              "sphere": " ({range} sphere)",
+              "hemisphere": " ({range} hemisphere)"
+            }
+          },
+          "components": {
+            "header": "Components:",
+            "verbal": "V",
+            "somatic": "S",
+            "material": "M",
+            "material-components": " ({components})"
+          },
+          "duration": {
+            "header": "Duration:",
+            "type": {
+              "instantaneous": "Instantaneous",
+              "untilDispelled": "Until dispelled",
+              "untilDispelledOrTriggered": "Until dispelled or triggered",
+              "concentration": "Concentration,",
+              "upTo": "Up to"
+            },
+            "duration": {
+              "minute": "{n} minute | {n} minutes",
+              "hour": "{n} hour | {n} hours",
+              "day": "{n} day | {n} days",
+              "round": "{n} round | {n} rounds"
+            }
+          }
+        }
+      }
+    }
+  }
+}

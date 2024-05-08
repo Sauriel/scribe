@@ -1,0 +1,42 @@
+{
+  "header": "Save document",
+  "info": "The \"in browser\" saves are saved in you cache. So be careful if you delete it.",
+  "replace": {
+    "text": "Do you want to overwrite this save?",
+    "abort": "No",
+    "confirm": "Yes"
+  },
+  "delete": {
+    "text": "Do you want to delete this save?",
+    "abort": "No",
+    "confirm": "Yes",
+    "success": "Save deleted",
+    "failure": "Could not delete save"
+  },
+  "server": {
+    "header": "Save on server",
+    "new": "New save ({name})",
+    "private": "Hide in Library",
+    "quota": "{current} MB / {max} MB",
+    "document-count": "{current} / {max} Documents",
+    "info": "<p>Documents you save on the server can be found by all users in the <strong>library</strong>. If you don't want this, as a <strong>patreon</strong> supporter you can mark documents as <strong>private</strong> if your tier allows it.</p>",
+    "share": {
+      "text": "Do you want to share this document on reddit (r/DnDHomebrew)",
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "browser": {
+    "header": "Save in browser",
+    "new": "New save ({name})"
+  },
+  "local": {
+    "header": "Or",
+    "download": "Download"
+  },
+  "success": "Document saved",
+  "failure": "Document could not be saved",
+  "footer": {
+    "abort": "Cancel"
+  }
+}

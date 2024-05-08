@@ -1,0 +1,9 @@
+{
+  "close": "Cancel",
+  "apply": "OK",
+  "link": {
+    "label": "Link",
+    "placeholder": "Enter a URL",
+    "target": "Open in new tab"
+  }
+}

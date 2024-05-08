@@ -1,0 +1,162 @@
+{
+  "undo": {
+    "success": "Reverted \"{action}\"",
+    "failure": "Could not reapply \"{action}\""
+  },
+  "redo": {
+    "success": "Reapplied \"{action}\"",
+    "failure": "Could not revert \"{action}\""
+  },
+  "document": {
+    "name": {
+      "change": "Change name"
+    },
+    "setting": {
+      "change": "Change setting"
+    },
+    "page_size": {
+      "change": "Change page size"
+    },
+    "background": {
+      "change": "Change default background"
+    },
+    "footer": {
+      "change": "Change default footer"
+    }
+  },
+  "page": {
+    "background": {
+      "change": "Change page background"
+    },
+    "background-image": {
+      "add": "Add background image",
+      "remove": "Remove background image",
+      "change": "Change background image",
+      "order": "Reorder background image",
+      "duplicate": "Duplicate background image"
+    },
+    "footer": {
+      "change": "Change page footer"
+    },
+    "add": "Add page",
+    "duplicate": "Duplicate page",
+    "remove": "Remove page",
+    "order": "Reorder pages"
+  },
+  "element": {
+    "default": {
+      "vertical": {
+        "add": "Add element",
+        "remove": "Remove element",
+        "move": "Move element",
+        "duplicate": "Duplicate element"
+      },
+      "horizontal": {
+        "resize": "Resize columns",
+        "add": "Add column",
+        "remove": "Remove column",
+        "order": "Reorder columns",
+        "gutter": "Change gutter"
+      },
+      "spacing": {
+        "height": "Change vertical spacing height"
+      }
+    },
+    "dandd": {
+      "heading": {
+        "level": {
+          "change": "Change heading level"
+        },
+        "text": {
+          "change": "Change heading"
+        }
+      },
+      "paragraph": {
+        "initial": {
+          "change": "Change initial"
+        },
+        "firstLineUppercase": {
+          "change": "Change first line in uppercase"
+        }
+      },
+      "note": {
+        "type": {
+          "change": "Change type"
+        },
+        "backgroundColor": {
+          "change": "Change background color"
+        }
+      },
+      "table": {
+        "border": {
+          "change": "Change table border"
+        },
+        "cell": {
+          "change": "Change table cell"
+        },
+        "cells": {
+          "change": "Change table cells"
+        },
+        "order": {
+          "column": {
+            "change": "Change table column order"
+          },
+          "row": {
+            "change": "Change table row order"
+          }
+        },
+        "headline": {
+          "change": "Change table headline"
+        },
+        "type": {
+          "change": "Change table type"
+        },
+        "color": {
+          "change": "Change table color"
+        },
+        "row": {
+          "add": "Add row",
+          "duplicate": "Duplicate row",
+          "delete": "Delete row"
+        },
+        "column": {
+          "add": "Add column",
+          "duplicate": "Duplicate column",
+          "delete": "Delete column"
+        },
+        "replace": "Change table"
+      },
+      "monster": {
+        "columns": {
+          "change": "Change column count"
+        },
+        "numbersFix": {
+          "change": "Change numbers style"
+        },
+        "change": "Change monster"
+      }
+    },
+    "text": {
+      "change": "Change text"
+    },
+    "custom-css": {
+      "change": "Change custom css"
+    }
+  },
+  "tiptap": {
+    "OrderedList": "Ordered list",
+    "BulletList": "Bullet list",
+    "Strike": "Strikethrough",
+    "Underline": "Underlined",
+    "Italic": "Italic",
+    "Bold": "Bold",
+    "Color": "Font color",
+    "Size": "Font size",
+    "Font": "Font type",
+    "Align": "Text align",
+    "Content": "Text",
+    "Link": "Link",
+    "Typogr": "Text optimization",
+    "Image": "Image"
+  }
+}

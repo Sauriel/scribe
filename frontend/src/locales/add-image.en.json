@@ -1,0 +1,26 @@
+{
+  "close": "Cancel",
+  "apply": "OK",
+  "url": {
+    "label": "Image"
+  },
+  "float": {
+    "label": "Align",
+    "left": "left",
+    "none": "none",
+    "right": "right"
+  },
+  "no-bg": {
+    "label": "Remove white background",
+    "info": "This will make everything white in the image \"transparent\"."
+  },
+  "png-mask": {
+    "label": "Flow text around a transparent PNG image",
+    "info": "This only works if the image is aligned left or right and let the text flow around the image, based on the transparency of the image."
+  },
+  "size": "Size",
+  "width-placeholder": "Width",
+  "height-placeholder": "Height",
+  "hint": "Leave one field empty to keep the aspect ratio",
+  "extra": "Extra"
+}

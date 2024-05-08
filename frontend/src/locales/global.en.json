@@ -1,0 +1,19 @@
+{
+  "app": {
+    "name": "Scribe",
+    "slogan": "Tabletop Publisher",
+    "version": {
+      "normal": "",
+      "pro": "Pro"
+    }
+  },
+  "routes": {
+    "default": "{appName}{appVersion} - {route}",
+    "library": "Library",
+    "view": "{document} by {author}"
+  },
+  "file-size": {
+    "kb": "{size} KB",
+    "mb": "{size} MB"
+  }
+}

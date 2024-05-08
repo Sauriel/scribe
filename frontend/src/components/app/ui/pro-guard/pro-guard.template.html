@@ -1,0 +1,6 @@
+<div class="pro-guard" :class="{ 'pro-guard--forbidden': !isAllowed }">
+  <slot name="secure-slot" :secureCall="secureCall" />
+  <div v-if="!isAllowed" class="pro-guard--forbidden-info">
+    <info small colored-icon type="warning" :text="$t('pro-guard.info')" />
+  </div>
+</div>

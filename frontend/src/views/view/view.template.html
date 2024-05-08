@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="panel info-panel">
+    <div class="document-info">
+      <heading>{{ document.name }}</heading>
+      <span class="author">{{ $t("view.info.author", { author }) }}</span>
+      <btn full-width class="clone-btn" @click="cloneDocument">{{ $t("view.info.clone") }}</btn>
+    </div>
+    <export-panel/>
+  </div>
+  <workspace only-view :document="document" />
+  <page-overview-panel class="panel" only-view :view-document="document" />
+</div>

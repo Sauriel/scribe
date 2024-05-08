@@ -1,0 +1,46 @@
+<div class="center">
+  <div class="library">
+    <div class="library-filter" :class="{ 'bookshelf--filter': bookshelf }">
+      <select-bar v-model="bookshelf" :items="views" class="view-selector" round shadow-border alternate-colors />
+    </div>
+    <ul class="documents" :class="{ 'bookshelf': bookshelf }">
+      <div class="board board--top" v-if="bookshelf" />
+      <div class="board board--upper-middle" v-if="bookshelf" />
+      <div class="board board--lower-middle" v-if="bookshelf" />
+      <div class="board board--bottom" v-if="bookshelf" />
+      <li class="document" v-for="document of documents" :key="document.id" @click="openDocument(document)">
+        <img :src="document.thumb" :alt="document.name" class="document--preview">
+        <div class="document--info">
+          <div class="document--name">
+            {{ document.name }}
+          </div>
+          <div class="document--author">
+            {{ $t("library.document.author", { author: document.user.username }) }}
+          </div>
+          <ul class="document--meta">
+            <li class="document--meta-entry">
+              {{ $t("library.document.page-count", document.pageCount) }}
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <div class="paging" v-if="maxPage > 1">
+      <font-awesome-icon
+        icon="chevron-left"
+        class="paging--control"
+        @click="currentPage--"
+        v-if="currentPage > 1"
+      />
+      <span class="paging--curent">
+        {{ $t("library.paging.page", { current: currentPage, max: maxPage}) }}
+      </span>
+      <font-awesome-icon
+        icon="chevron-right"
+        class="paging--control"
+        @click="currentPage++"
+        v-if="currentPage < maxPage"
+      />
+    </div>
+  </div>
+</div>

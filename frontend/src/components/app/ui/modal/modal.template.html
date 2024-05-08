@@ -1,0 +1,10 @@
+<div class="background" v-if="visible">
+  <div
+    class="modal"
+    :class="{
+      'modal--flexible-width': noMinWidth,
+      'modal--fullscreen': fullscreen
+    }">
+    <component v-if="component" :is="component" :payload="payload" @close="onClose" />
+  </div>
+</div>

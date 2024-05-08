@@ -1,0 +1,33 @@
+.editable-text,
+.non-editable-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editable-text--button {
+  cursor: pointer;
+  color: var(--color-foreground);
+  font-size: 0.8em;
+  padding: 0.25em;
+  display: flex;
+  justify-content: center;
+  width: 2em;
+  aspect-ratio: 1/1;
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-primary--dark);
+  outline: none;
+
+  &:hover {
+    color: var(--color-foreground-dark);
+    background-color: var(--color-primary--light);
+    border: 1px solid var(--color-primary);
+  }
+}
+
+.non-editable-text--actions {
+  display: flex;
+  gap: 0.5em;
+}

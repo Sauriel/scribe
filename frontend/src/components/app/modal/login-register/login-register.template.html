@@ -1,0 +1,13 @@
+<div class="login-register">
+  <select-bar alternate-colors v-model="mode" :items="modes" />
+  <register v-if="isRegister" @success="$emit('close')">
+    <template #footer>
+      <btn outline @click="$emit('close')">{{ $t("login-register.footer.close") }}</btn>
+    </template>
+  </register>
+  <login v-else @success="$emit('close')">
+    <template #footer>
+      <btn outline @click="$emit('close')">{{ $t("login-register.footer.close") }}</btn>
+    </template>
+  </login>
+</div>

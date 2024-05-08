@@ -1,0 +1,18 @@
+query {
+  doc_list {
+    allowPrivate
+    documentCount
+    maxDocuments
+    totalSize
+    maxSize
+    documents {
+      id
+      setting
+      size
+      private
+      name
+      pageCount
+      thumb
+    }
+  }
+}

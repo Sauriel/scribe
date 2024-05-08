@@ -1,0 +1,20 @@
+query loginUser($loginName: String!, $password: String!) {
+  login(input: { loginName: $loginName, password: $password }) {
+    id
+    username
+    email
+    accessToken
+    accessTokenExpireDate
+    refreshToken
+    refreshTokenExpireDate
+    patreon {
+      name
+      email
+      status
+      checkedOn
+      tier
+      tierId
+      discord
+    }
+  }
+}

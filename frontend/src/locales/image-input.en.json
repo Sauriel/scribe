@@ -1,0 +1,8 @@
+{
+  "file": {
+    "select": "Upload file"
+  },
+  "web": {
+    "placeholder": "Enter a URL"
+  }
+}

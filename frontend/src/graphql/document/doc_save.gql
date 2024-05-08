@@ -1,0 +1,13 @@
+mutation doc_save($input: DocumentInput!) {
+  doc_save(input: $input) {
+    id
+    setting
+    size
+    private
+    name
+    pageCount
+    user {
+      username
+    }
+  }
+}

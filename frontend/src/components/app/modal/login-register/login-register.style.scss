@@ -1,0 +1,11 @@
+.login-register {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+
+  .select-bar {
+    margin-bottom: 1em;
+  }
+}

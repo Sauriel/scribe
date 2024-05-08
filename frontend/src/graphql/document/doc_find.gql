@@ -1,0 +1,12 @@
+query doc_find($id: String!) {
+  doc_find(id: $id) {
+    version
+    name
+    format
+    pages
+    defaults
+    user {
+      username
+    }
+  }
+}

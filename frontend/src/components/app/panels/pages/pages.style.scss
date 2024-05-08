@@ -1,0 +1,51 @@
+.page-overview-panel {
+  padding: 1rem;
+  width: 100%;
+
+  .page-overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-entry {
+      flex: 0 0 auto;
+      margin-bottom: 1rem;
+      cursor: move;
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &--selected {
+        position: relative;
+        opacity: 1;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          pointer-events: none;
+        }
+
+        &::before {
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          border: 4px solid var(--color-foreground);
+          z-index: 1;
+        }
+
+        &::after {
+          top: 1px;
+          left: 1px;
+          bottom: 1px;
+          right: 1px;
+          border: 2px solid var(--color-primary);
+          z-index: 2;
+        }
+      }
+    }
+  }
+}

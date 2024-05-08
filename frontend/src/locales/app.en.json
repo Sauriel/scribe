@@ -1,0 +1,34 @@
+{
+  "settings": {
+    "header": "Settings",
+    "elements": {
+      "border": {
+        "always": "Always show element border"
+      },
+      "handle": {
+        "hover": "Show move handle on hover"
+      }
+    },
+    "save": {
+      "auto": "Save after every change (autosave)"
+    },
+    "tiptap": {
+      "inline": {
+        "bubble": {
+          "show": "Allow formatting of text inside of document view"
+        }
+      }
+    },
+    "analytics": {
+      "enable": "Allow cookies"
+    },
+    "theme": {
+      "header": "Theme",
+      "default": "Dark Norn (default)",
+      "light_norn": "Light Norn"
+    },
+    "footer": {
+      "close": "Close"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.browser-open {
+  padding-top: 1rem;
+  min-height: 30vh;
+}
+
+.saved-documents {
+  padding: 0;
+  margin: 0.5rem 0;
+  list-style: none;
+
+  .saved-document {
+    display: flex;
+    background-color: var(--color-background--dark);
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+
+    &:hover {
+      background-color: var(--color-background--light);
+    }
+
+    .delete-icon {
+      flex: 0 0 auto;
+      margin: -0.5rem;
+      width: 36px;
+      height: 36px;
+      border-top-right-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+    }
+  }
+}

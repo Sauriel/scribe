@@ -1,0 +1,117 @@
+{
+  "header": "Create a monster",
+  "info": "You can click on every number on the top to jump to the corresponding section in this wizard.",
+  "edit-header": "Edit {name}",
+  "apply": "Create monster",
+  "save": "Save",
+  "close": "Cancel",
+  "basic": {
+    "header": "Basics",
+    "summary": "Alignment, Stats",
+    "name": "Name",
+    "subType": {
+      "placeholder": "sub species (optional)"
+    },
+    "size": "Size",
+    "type": "Type",
+    "alignment": "Alignment"
+  },
+  "combat": {
+    "header": "Combat",
+    "summary": "AC, HP",
+    "armor": "Armor",
+    "armorType": {
+      "placeholder": "armor type"
+    },
+    "hitPoints": "Hit Points",
+    "hints": {
+      "diceCount": "Number of dice",
+      "hitPointsMod": "Number of dice * CON mod"
+    },
+    "movements": {
+      "header": "Speed",
+      "add": "Add new speed/movement"
+    }
+  },
+  "stats": {
+    "header": "Stats"
+  },
+  "abilities": {
+    "header": "Abilities",
+    "summary": "CR, Senses",
+    "savingThrows": "Saving Throws",
+    "skills": "Skills",
+    "senses": "Senses",
+    "passivePerception": "Passive Perception",
+    "default": "Default",
+    "combatModifier": {
+      "damageVulnerability": "Damage Vulnerabilities",
+      "damageResistance": "Damage Resistances",
+      "damageImmunity": "Damage Immunities",
+      "conditionImmunities": "Condition Immunities"
+    },
+    "languages": "Languages",
+    "challengeRating": "Challenge Rating",
+    "proficiency-bonus": {
+      "label": "Proficiency Bonus",
+      "show": "Show"
+    }
+  },
+  "specialTraits": {
+    "header": "Special Traits",
+    "edit": "Edit special trait",
+    "name": "Name",
+    "add": "Add new special trait"
+  },
+  "actions": {
+    "header": "Actions",
+    "summary": "Bonus, Reaction",
+    "actions": {
+      "header": "Actions",
+      "edit": "Edit action",
+      "ability": {
+        "label": "Ability",
+        "name": "Name"
+      },
+      "attack": {
+        "label": "Attack",
+        "name": "Name",
+        "attackType": "Attack type",
+        "attack": "To hit",
+        "damage": "On hit"
+      },
+      "add": {
+        "ability": "Add new attack action",
+        "attack": "Add new ability action"
+      }
+    },
+    "reactions": {
+      "header": "Reactions",
+      "edit": "Edit reaction",
+      "name": "Name",
+      "add": "Add new reaction"
+    },
+    "bonusActions": {
+      "header": "Bonus Actions",
+      "edit": "Edit bonus actions",
+      "name": "Name",
+      "add": "Add new bonus actions"
+    }
+  },
+  "legendary": {
+    "header": "Legendary",
+    "switch": "is legendary",
+    "description": "Description",
+    "edit": "Edit legendary ability",
+    "name": "Name",
+    "add": "Add new legendary ability"
+  },
+  "mythic": {
+    "header": "Mythic",
+    "switch": "is mythic",
+    "description": "Description",
+    "edit": "Edit mythic ability",
+    "name": "Name",
+    "add": "Add new mythic ability"
+  }
+}

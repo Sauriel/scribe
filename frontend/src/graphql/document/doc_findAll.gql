@@ -1,0 +1,15 @@
+query doc_findAll($input: FindAllDocumentsInput) {
+  doc_findAll(input: $input) {
+    documentCount
+    documents {
+      id
+      name
+      setting
+      thumb
+      pageCount
+      user {
+        username
+      }
+    }
+  }
+}

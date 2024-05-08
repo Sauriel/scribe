@@ -1,0 +1,36 @@
+<div class="workspace">
+  <div class="workspace-quicktools" v-if="!onlyView">
+    <div class="quicktool" :class="{ 'quicktool--disabled': !history.undoEntry }" :key="'undo-' + historyHash"
+      :data-key="'undo-' + historyHash" @click="undo">
+      <font-awesome-icon icon="undo-alt" />
+    </div>
+    <div class="quicktool" :class="{ 'quicktool--disabled': !history.redoEntry }" :key="'redo-' + historyHash"
+      :data-key="'redo-' + historyHash" @click="redo">
+      <font-awesome-icon icon="redo-alt" />
+    </div>
+  </div>
+  <header class="workspace-title" @click="openDocumentSettings" v-if="!onlyView">
+    {{ document.name }}
+  </header>
+  <div class="workspace-info" v-if="!onlyView">
+    <tooltip position="bottom-left">
+      <template #tooltip>
+        {{ $t("document.info") }}
+      </template>
+      <font-awesome-icon icon="info-circle" />
+    </tooltip>
+  </div>
+  <div id="workspace-pages" class="workspace-pages" @click.self.stop="clickedOutside">
+    <div v-for="(page, index) of document.pages" :key="'page-' + index" class="zoomable-page" :style="zoomedPageStyle">
+      <Waypoint @change="onWaypointChange($event, index)" />
+      <page :index="index" :zoom="documentZoom" :document="document" :locked="onlyView" />
+    </div>
+    <btn outline icon="plus" @click="addPage" class="add-new-btn" :style="addNewStyle" v-if="!onlyView">
+      {{ $t("document.page.add") }}
+    </btn>
+  </div>
+  <div class="page-zoom">
+    <plus-minus-input v-model="documentZoom" :presets="zoomPresets" :min="10" :max="200" suffix="%" small
+      dropdown-top />
+  </div>
+</div>

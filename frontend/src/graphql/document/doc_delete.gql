@@ -1,0 +1,3 @@
+mutation doc_delete($id: String!) {
+  doc_delete(id: $id)
+}

@@ -1,0 +1,17 @@
+.center {
+  width: 100%;
+}
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background);
+  width: auto;
+  height: auto;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+
+  .message {
+    margin: 0,5rem 0 0;
+  }
+}

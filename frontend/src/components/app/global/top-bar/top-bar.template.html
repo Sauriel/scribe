@@ -1,0 +1,168 @@
+<div class="top-bar">
+  <div class="top-bar-menu">
+    <header class="header">
+      <div>
+        <strong class="app-name">{{ $t("global.app.name") }}</strong>
+        <span class="version">{{ scribeVersion }}</span>
+        <span class="app-version" @click="showChangelog">v{{ appVersion }}</span>
+      </div>
+    </header>
+    <ul class="menu">
+      <li class="menu-entry with-dropdown">
+        <menu-dropdown>
+          {{ $t("top-bar.file.label") }}
+          <template #dropdown>
+            <div class="menu-dropdown-entry" @click="createNewDocument">
+              {{ $t("top-bar.file.new") }}
+            </div>
+            <div class="menu-dropdown-entry" @click="openDocument">
+              {{ $t("top-bar.file.open") }}
+            </div>
+            <div
+              class="menu-dropdown-entry"
+              :class="{ 'menu-dropdown-entry--disabled': !document }"
+              @click="saveDocument"
+            >
+              {{ $t("top-bar.file.save") }}
+            </div>
+            <div
+              class="menu-dropdown-entry"
+              :class="{ 'menu-dropdown-entry--disabled': !document }"
+              @click="openExport"
+            >
+              {{ $t("top-bar.file.export") }}
+            </div>
+            <div class="menu-dropdown-entry" @click="openImport">
+              {{ $t("top-bar.file.import") }}
+            </div>
+          </template>
+        </menu-dropdown>
+      </li>
+      <li class="menu-entry with-dropdown" :class="{ disabled: !document }">
+        <menu-dropdown>
+          {{ $t("top-bar.edit.label") }}
+          <template #dropdown v-if="document">
+            <div
+              class="menu-dropdown-entry"
+              :class="{ 'menu-dropdown-entry--disabled': !history.undoEntry }"
+              :key="'undo-' + historyHash"
+              @click="undo"
+            >
+              {{
+                $t("top-bar.edit.undo.label", {
+                  action: history.undoEntry ? $t(history.undoEntry.baseMessageKey) : "",
+                })
+              }}
+              <span class="shortcut">
+                {{ $t("top-bar.edit.undo.shortcut") }}
+              </span>
+            </div>
+            <div
+              class="menu-dropdown-entry"
+              :class="{ 'menu-dropdown-entry--disabled': !history.redoEntry }"
+              :key="'redo-' + historyHash"
+              @click="redo"
+            >
+              {{
+                $t("top-bar.edit.redo.label", {
+                  action: history.redoEntry ? $t(history.redoEntry.baseMessageKey) : "",
+                })
+              }}
+              <span class="shortcut">
+                {{ $t("top-bar.edit.redo.shortcut") }}
+              </span>
+            </div>
+          </template>
+        </menu-dropdown>
+      </li>
+      <li class="menu-entry with-dropdown" :class="{ disabled: !document }">
+        <menu-dropdown v-model="selectedEditPanel" :items="documentMenuEntries">
+          {{ $t("top-bar.document.label") }}
+        </menu-dropdown>
+      </li>
+      <li class="menu-entry with-dropdown" :class="{ disabled: !document }">
+        <menu-dropdown v-model="selectedEditPanel" :items="pageMenuEntries">
+          {{ $t("top-bar.page.label") }}
+        </menu-dropdown>
+      </li>
+      <li class="menu-entry with-dropdown">
+        <menu-dropdown>
+          {{ $t("top-bar.view.label") }}
+          <template #dropdown>
+            <router-link
+              v-for="(location, index) of views"
+              :key="'view-entry-' + index"
+              :to="location.to"
+              custom
+              v-slot="{ navigate, isActive }"
+            >
+              <div
+                class="menu-dropdown-entry"
+                :class="{
+                  'menu-dropdown-entry--selected': isActive,
+                  'menu-dropdown-entry--disabled': location.disabled,
+                }"
+                @click="navigate"
+              >
+                {{ $t(location.label) }}
+              </div>
+            </router-link>
+          </template>
+        </menu-dropdown>
+      </li>
+    </ul>
+  </div>
+  <ul class="menu">
+    <li class="menu-entry menu-entry--link">
+      <a class="discord-link" href="https://discord.gg/JDxGbK8f3n" target="_blank">
+        <span class="join-us">{{ $t("top-bar.discord") }}</span>
+        <font-awesome-icon :icon="['fab', 'discord']" />
+      </a>
+    </li>
+    <li v-if="!isPatreonSupporter" class="menu-entry menu-entry--link">
+      <a
+        class="patreon-link"
+        href="https://patreon.com/scribe_tabletop_publisher"
+        target="_blank"
+      >
+        <span class="join-us">{{ $t("top-bar.patreon") }}</span>
+        <font-awesome-icon :icon="['fab', 'patreon']" />
+      </a>
+    </li>
+    <li class="menu-entry" @click="openInfo">
+      <font-awesome-icon icon="info-circle" />
+    </li>
+    <!-- ToDo: Uncomment if localizations are added
+    <li class="menu-entry with-dropdown">
+      <menu-dropdown position="left" v-model="locale" :items="languages">
+        <font-awesome-icon icon="globe-americas" />
+      </menu-dropdown>
+    </li> -->
+    <li class="menu-entry with-dropdown">
+      <menu-dropdown position="left">
+        <font-awesome-icon icon="user" />
+        <span class="username" v-if="isLoggedIn">{{ username }}</span>
+        <template #dropdown>
+          <router-link v-if="isLoggedIn" :to="profileRoute" custom v-slot="{ navigate, isActive }">
+            <div class="menu-dropdown-entry" :class="{ 'menu-dropdown-entry--selected': isActive }" @click="navigate">
+              {{ $t("top-bar.user.profile") }}
+            </div>
+          </router-link>
+          <div v-if="isLoggedIn" class="menu-dropdown-entry" @click="logout">
+            {{ $t("top-bar.user.logout") }}
+          </div>
+          <div
+            v-else
+            class="menu-dropdown-entry"
+            @click="openLoginRegister"
+            >
+            {{ $t("top-bar.user.login-register") }}
+          </div>
+        </template>
+      </menu-dropdown>
+    </li>
+    <li class="menu-entry" @click="openSettings">
+      <font-awesome-icon icon="cog" />
+    </li>
+  </ul>
+</div>

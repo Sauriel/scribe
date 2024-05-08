@@ -1,0 +1,57 @@
+<div class="center">
+  <div class="profile-page">
+    <div class="profile">
+      <heading>{{ $t("profile.header", { name: user.username }) }}</heading>
+      <div class="row">
+        <table class="col user">
+          <tr class="entry">
+            <th class="entry-label">{{ $t("profile.table.name.header") }}</th>
+            <td class="entry-content">
+              <editable-text :model-value="user.username" @update:modelValue="onUserNameChanged" />
+            </td>
+          </tr>
+          <tr class="entry">
+            <th class="entry-label">{{ $t("profile.table.email.header") }}</th>
+            <td class="entry-content">
+              <editable-text type="email" :model-value="user.email" @update:modelValue="onUserEmailChanged" />
+            </td>
+          </tr>
+          <tr class="entry">
+            <th class="entry-label">{{ $t("profile.table.password.header") }}</th>
+            <td class="entry-content">
+              <editable-password @save="onUserPasswordChanged" />
+            </td>
+          </tr>
+          <tr class="entry" v-if="!isPatreon">
+            <th class="entry-label">{{ $t("profile.table.patreon.header") }}</th>
+            <td class="entry-content">
+              <button class="link-patreon-btn" @click="linkPatreon">
+                <font-awesome-icon :icon="['fab', 'patreon']" />
+                {{ $t("profile.table.patreon.linkPatreon") }}
+              </button>
+            </td>
+          </tr>
+          <tr v-if="isPatreon" class="entry">
+            <th class="entry-label">{{ $t("profile.table.patreon.account.header") }}</th>
+            <td class="entry-content">
+              {{ $t("profile.table.patreon.account.value", { name: user.patreon.name, email: user.patreon.email }) }}
+            </td>
+          </tr>
+          <tr v-if="isPatreon" class="entry">
+            <th class="entry-label">{{ $t("profile.table.patreon.status.header") }}</th>
+            <td class="entry-content">
+              {{ $t("profile.table.patreon.status.value." + user.patreon.status) }}
+            </td>
+          </tr>
+          <tr v-if="isPatreon" class="entry">
+            <th class="entry-label">{{ $t("profile.table.patreon.tier.header") }}</th>
+            <td class="entry-content">
+              {{ user.patreon.tier || $t("profile.table.patreon.tier.none") }}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <settings-modal no-modal />
+  </div>
+</div>
