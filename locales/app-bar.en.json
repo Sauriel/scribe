@@ -1,0 +1,10 @@
+{
+  "actions": {
+    "user": {
+      "profile": "Profile",
+      "settings": "Settings",
+      "help": "Help",
+      "logout": "Logout"
+    }
+  }
+}

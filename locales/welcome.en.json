@@ -1,0 +1,10 @@
+{
+  "header": "Welcome to ",
+  "show": "Show Welcome Screen",
+  "quick-access": {
+    "create": "Create",
+    "open": "Open",
+    "library": "Library",
+    "register": "Login"
+  }
+}

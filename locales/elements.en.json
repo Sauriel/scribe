@@ -1,0 +1,48 @@
+{
+  "header": {
+    "variants": {
+      "group": "Group variants",
+      "ungroup": "Show every variant"
+    },
+    "filter": {
+      "show": "Show filter"
+    }
+  },
+  "groups": {
+    "favorites": "Favorites",
+    "layout": "Layout",
+    "text": "Text",
+    "template": "Templates",
+    "multimedia": "Multimedia"
+  },
+  "list": {
+    "test-element": "Test",
+    "page-break": "Page break",
+    "column-break": "Column break",
+    "vertical-space": "Vertical space",
+    "horizontal-rule": "Horizontal line",
+    "note": "Note",
+    "headline": "Headline",
+    "paragraph": "Text",
+    "table": "Table",
+    "class-table": "Class table",
+    "rollable-table": "Rollable table",
+    "table-of-contents": "Table of contents",
+    "spell": "Spell",
+    "spell-list": "Spell list",
+    "monster": "Monster",
+    "cover": "Cover",
+    "book-cover": "Book cover",
+    "back-cover": "Back cover",
+    "race": "Race",
+    "class": "Class",
+    "background": "Background",
+    "item": "Item",
+    "character": "Character sheet",
+    "image": "Image",
+    "map": "Map",
+    "video": "Video",
+    "music": "Music",
+    "3d-viewer": "3D viewer"
+  }
+}

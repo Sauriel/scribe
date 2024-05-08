@@ -1,0 +1,14 @@
+{
+  "unknown": "An unknown error occured.",
+  "profile": {
+    "not-found": {
+      "header": "User Profile Not Found",
+      "content": {
+        "line-1": "Oh no! It seems like the user profile you're looking for couldn't be found.",
+        "line-2": "Maybe they're taking a break or have ventured into another corner of the digital universe.",
+        "line-3": "Feel free to explore our platform and connect with other amazing individuals.",
+        "line-4": "Who knows? You might stumble upon someone whose profile resonates with your interests and sparks a whole new connection."
+      }
+    }
+  }
+}

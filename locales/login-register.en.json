@@ -1,0 +1,52 @@
+{
+  "title": {
+    "login": "Login",
+    "register":"Register"
+  },
+  "form": {
+    "name": {
+      "label": "Username",
+      "placeholder": "Please enter your username"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Please enter your email",
+      "error": "That doesn't look like a valid email. Please try again with a valid address."
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Please enter your password",
+      "error": "Your password doesn't meet the requirements. Please choose a stronger password.",
+      "hint": {
+        "length": "Your password must be at least 8 characters long.",
+        "lowercase": "Include at least one lowercase letter.",
+        "uppercase": "Include at least one uppercase letter.",
+        "number": "Include at least one number.",
+        "special": "Include at least one special character."
+      }
+    },
+    "repeatPassword": {
+      "label": "Repeat password",
+      "placeholder": "Please repeat your password",
+      "error": "The passwords don't match. Please make sure they're the same and try again."
+    },
+    "rememberMe": {
+      "label": "Remember me"
+    },
+    "passwordForgotten": "Username or password forgotten?",
+    "submit": {
+      "login": "Login",
+      "register": "Register"
+    }
+  },
+  "info": {
+    "register": {
+      "text": "Please use a strong password:",
+      "button": "Show login"
+    },
+    "login": {
+      "text": "Register now and save, access, and share your files easily. Don't miss out on these features!",
+      "button": "Register now"
+    }
+  }
+}

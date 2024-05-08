@@ -1,0 +1,50 @@
+{
+  "create": {
+    "header": "Create Document",
+    "steps": {
+      "base": {
+        "header": "Base Settings",
+        "name": {
+          "label": "Document Name",
+          "placeholder": "Please enter a Name"
+        },
+        "description": {
+          "label": "Document Description",
+          "placeholder": "Please enter a Description"
+        },
+        "project": {
+          "header": "Do you want to add the Document to a Project?",
+          "select": {
+            "placeholder": "Select an existing Project"
+          },
+          "text": "or create a new"
+        },
+        "community": {
+          "header": "Should other users see your document?",
+          "private": "Private",
+          "public": "Public",
+          "allow-comments": "Allow Comments"
+        },
+        "page": {
+          "header": "Page Size"
+        },
+        "page-size": {
+          "width": {
+            "label": "Width",
+            "placeholder": "Enter Page Width"
+          },
+          "height": {
+            "label": "Height",
+            "placeholder": "Enter Page Height"
+          }
+        }
+      },
+      "presets": {
+        "header": "Select a Preset"
+      },
+      "settings": {
+        "header": "Modify Document Settings"
+      }
+    }
+  }
+}

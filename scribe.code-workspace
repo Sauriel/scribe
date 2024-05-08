@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"Hexa",
+			"norn",
+			"tiptap",
+			"wrappable"
+		],
+		"editor.formatOnSave": false,
+		"vue.codeActions.savingTimeLimit": 2000,
+	}
+}

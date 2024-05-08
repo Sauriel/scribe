@@ -1,0 +1,27 @@
+{
+  "plugins": [
+    "stylelint-order"
+  ],
+  "processors": [
+    "stylelint-processor-html"
+  ],
+  "extends": [
+    "stylelint-config-recommended-vue",
+    "stylelint-config-property-sort-order-smacss",
+    "stylelint-config-css-modules"
+  ],
+  "rules": {
+    "custom-property-pattern": "([a-z]+)(-[a-z]+)*(--[a-z]+)?"
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.vue",
+        "**/*.vue"
+      ],
+      "rules": {
+        "no-empty-first-line": null
+      }
+    }
+  ]
+}

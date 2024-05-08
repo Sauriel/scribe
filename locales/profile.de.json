@@ -1,0 +1,12 @@
+{
+  "loading": "Suche nach Benutzer",
+  "showcase": {
+    "entry": {
+      "footer": {
+        "comments": "Es gibt noch keine Diskussionen zu diesem Dokument. \n| \nZu diesem Dokument wurde ein Kommentar veröffentlicht. \n| \nZu diesem Dokument wurden {count} Kommentare gepostet.",
+        "favorite": "Leider hat noch kein Benutzer dieses Dokument mit einem Lesezeichen versehen. \n| \nEin Benutzer hat dieses Dokument als Favorit gespeichert. \n| \n{count} Benutzer haben dieses Dokument als Favorit markiert.",
+        "share": "Bedauerlicherweise wurde dieses Dokument noch nicht geteilt. \n| \nDieses Dokument wurde bereits einmal mit der Welt geteilt. \n| \nDieses Dokument wurde bereits {count} Mal mit der Welt geteilt."
+      }
+    }
+  }
+}

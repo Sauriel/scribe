@@ -1,0 +1,12 @@
+{
+  "loading": "Searching for user",
+  "showcase": {
+    "entry": {
+      "footer": {
+        "favorite": "Sadly, no user has bookmarked this document yet. | One user has bookmarked this document as a favorite. | {count} users have bookmarked this document as a favorite.",
+        "comments": "There are no discussions about this document yet. | There is one comment posted on this document. | There are {count} comments posted on this document.",
+        "share": "Regrettably, this document has not yet been shared. | This document has already been shared with the world once. | This document has already been shared with the world {count} times."
+      }
+    }
+  }
+}

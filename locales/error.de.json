@@ -1,0 +1,14 @@
+{
+  "profile": {
+    "not-found": {
+      "content": {
+        "line-1": "Ach nein! \nEs scheint, als ob das gesuchte Benutzerprofil nicht gefunden werden konnte.",
+        "line-2": "Vielleicht machen sie eine Pause oder haben sich in eine andere Ecke des digitalen Universums gewagt.",
+        "line-3": "Erkunden Sie gerne unsere Plattform und vernetzen Sie sich mit anderen tollen Menschen.",
+        "line-4": "Wer weiß? \nMöglicherweise stoßen Sie auf jemanden, dessen Profil Ihren Interessen entspricht und eine ganz neue Verbindung aufbaut."
+      },
+      "header": "Benutzerprofil nicht gefunden"
+    }
+  },
+  "unknown": "Es ist ein unbekannter Fehler aufgetreten."
+}

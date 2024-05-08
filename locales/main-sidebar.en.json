@@ -1,0 +1,19 @@
+{
+  "menu": {
+    "files": {
+      "tooltip": "Project overview"
+    },
+    "elements": {
+      "tooltip": "Elements"
+    }
+  },
+  "files": {
+    "projects": {
+      "header": "Projects",
+      "show-more": "(click to show more)"
+    },
+    "files": {
+      "header": "Project files"
+    }
+  }
+}

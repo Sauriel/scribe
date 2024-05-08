@@ -1,0 +1,10 @@
+{
+  "actions": {
+    "user": {
+      "help": "Hilfe",
+      "logout": "Ausloggen",
+      "profile": "Profil",
+      "settings": "Einstellungen"
+    }
+  }
+}

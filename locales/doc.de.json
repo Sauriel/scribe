@@ -1,0 +1,40 @@
+{
+  "create": {
+    "header": "Dokument erstellen",
+    "steps": {
+      "base": {
+        "community": {
+          "allow-comments": "Kommentare erlauben",
+          "header": "Sollen andere Benutzer Ihr Dokument sehen?",
+          "private": "Privatgelände",
+          "public": "Öffentlich"
+        },
+        "description": {
+          "label": "Dokumentbeschreibung",
+          "placeholder": "Bitte geben Sie eine Beschreibung ein"
+        },
+        "header": "Basiseinstellungen",
+        "name": {
+          "label": "Dokumentname",
+          "placeholder": "Bitte geben Sie einen Namen ein"
+        },
+        "page": {
+          "header": "Seitengröße"
+        },
+        "project": {
+          "header": "Möchten Sie das Dokument zu einem Projekt hinzufügen?",
+          "select": {
+            "placeholder": "Wählen Sie ein vorhandenes Projekt aus"
+          },
+          "text": "oder ein neues erstellen"
+        }
+      },
+      "presets": {
+        "header": "Wählen Sie eine Voreinstellung aus"
+      },
+      "settings": {
+        "header": "Dokumenteinstellungen ändern"
+      }
+    }
+  }
+}

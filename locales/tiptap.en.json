@@ -1,0 +1,71 @@
+{
+  "menu": {
+    "actions": {
+      "bold": {
+        "tooltip": "Bold"
+      },
+      "italic": {
+        "tooltip": "Italic"
+      },
+      "underline": {
+        "tooltip": "Underline"
+      },
+      "strikethrough": {
+        "tooltip": "Strikethrough"
+      },
+      "style": {
+        "tooltip": "Style"
+      },
+      "color": {
+        "tooltip": "Color"
+      },
+      "align-left": {
+        "tooltip": "Align left"
+      },
+      "align-center": {
+        "tooltip": "Align center"
+      },
+      "align-right": {
+        "tooltip": "Align right"
+      },
+      "align-justify": {
+        "tooltip": "Align justify"
+      },
+      "line-height": {
+        "tooltip": "Line height"
+      },
+      "bullet-list": {
+        "tooltip": "Bullet list"
+      },
+      "ordered-list": {
+        "tooltip": "Ordered list"
+      },
+      "table": {
+        "tooltip": "Table"
+      },
+      "link": {
+        "tooltip": "Link"
+      },
+      "image": {
+        "tooltip": "Image"
+      },
+      "optimize": {
+        "tooltip": "Optimize"
+      },
+      "groups": {
+        "style": {
+          "tooltip": "More Styles"
+        },
+        "align": {
+          "tooltip": "Align"
+        },
+        "list": {
+          "tooltip": "List"
+        }
+      },
+      "fullscreen": {
+        "tooltip": "Fullscreen"
+      }
+    }
+  }
+}

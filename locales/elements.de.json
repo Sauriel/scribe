@@ -1,0 +1,48 @@
+{
+  "groups": {
+    "favorites": "Favoriten",
+    "layout": "Layout",
+    "multimedia": "Multimedia",
+    "template": "Vorlagen",
+    "text": "Text"
+  },
+  "header": {
+    "filter": {
+      "show": "Filter anzeigen"
+    },
+    "variants": {
+      "group": "Gruppenvarianten",
+      "ungroup": "Jede Variante anzeigen"
+    }
+  },
+  "list": {
+    "3d-viewer": "3D-Viewer",
+    "back-cover": "Rückseite",
+    "background": "Hintergrund",
+    "book-cover": "Buchcover",
+    "character": "Charakterblatt",
+    "class": "Klasse",
+    "class-table": "Klassentisch",
+    "column-break": "Spaltenumbruch",
+    "cover": "Abdeckung",
+    "headline": "Überschrift",
+    "horizontal-rule": "Horizontale Linie",
+    "image": "Bild",
+    "item": "Artikel",
+    "map": "Karte",
+    "monster": "Monster",
+    "music": "Musik",
+    "note": "Notiz",
+    "page-break": "Seitenumbruch",
+    "paragraph": "Text",
+    "race": "Wettrennen",
+    "rollable-table": "Rollbarer Tisch",
+    "spell": "Fluch",
+    "spell-list": "Zauberliste",
+    "table": "Tisch",
+    "table-of-contents": "Inhaltsverzeichnis",
+    "test-element": "Prüfen",
+    "vertical-space": "Vertikaler Raum",
+    "video": "Video"
+  }
+}
